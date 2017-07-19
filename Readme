@@ -6,7 +6,7 @@
 add_theme_support('post-thumbnails');
 
 //Menu support
-function cowork_features() {
+function DRT_features() {
 
   //add menus
   add_theme_support('menus');
@@ -15,13 +15,13 @@ function cowork_features() {
   register_nav_menu('lower', 'Below the Fold Menu');
 
 }
-add_action('init', 'cowork_features');
+add_action('init', 'DRT_features');
 //import stylesheets
 
-function cowork_resources() {
+function DRT_resources() {
   wp_enqueue_style('style', get_stylesheet_uri());
 }
-add_action('wp_enqueue_scripts', 'cowork_resources');
+add_action('wp_enqueue_scripts', 'DRT_resources');
 
 // add titles
 add_theme_support('title-tag');

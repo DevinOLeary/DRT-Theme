@@ -1,0 +1,82 @@
+
+
+//text
+h1, h2, h3, h4 {
+  font-family: $show-font;
+}
+h1{
+  font-size: $title;
+}
+h2{
+  font-size: $section-title;
+}
+h3{
+  font-size: $subtitle;
+}
+h4{
+  font-size: $cta-text;
+}
+p{
+  font-size: $read;
+  font-family: $read-font;
+}
+
+//elements
+.colored-divider {
+  background-color: $divider-line;
+  border: none;
+}
+.section-divider {
+  background-color: $dark-background;
+  border: none;
+}
+//Nav
+.site-header{
+  background-color: $dark-background;
+  .site-nav {
+    ul{
+      z-index:100;
+      li {
+        font-size: $read;
+        font-family: $show-font;
+        a {
+          color: $inverse-text;
+        }
+      }
+      li:last-child {
+        background-color: $cta-button;
+      }
+    }
+  }
+}
+//Blocks
+//A-space
+.banner {
+  background-color: $overlay;
+}
+.content-block {
+  h2,p{
+      color: $colored-text;
+  }
+}
+
+// Footer
+.footer-block {
+  background-color: $DRT-red;
+  .footer-nav {
+    a {
+      color: $inverse-text;
+      font-size: $read;
+      font-family: $read-font;
+    }
+  }
+  .contribution-links {
+    ul li {
+      a {
+        color: $inverse-text;
+        font-size: $read;
+        font-family: $read-font;
+      }
+    }
+  }
+}

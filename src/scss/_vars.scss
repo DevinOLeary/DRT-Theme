@@ -1,0 +1,35 @@
+// Color
+$DRT-red: #EF504F;
+$DRT-black: rgba(0,0,0,.8);
+$white: rgb(255,255,255);
+$clear-gray: rgba(155,155,155,.1);
+$clear: rgba(0,0,0,0);
+
+
+
+// Objects
+//text
+$inverse-text: $white;
+$colored-text: $DRT-black;
+//blocks
+$dark-background: $DRT-black;
+$overlay: $clear-gray;
+//elements
+$cta-button: $DRT-red;
+$divider-line: $DRT-red;
+
+
+$overlay-grey:linear-gradient(to bottom, $DRT-red, $clear);;
+$overlay-white: linear-gradient(to top, white, $clear);
+
+
+// Fonts
+$read: 20px;
+$cta-text: 24px;
+$subtitle: 36px;
+$section-title: 48px;
+$title: 64px;
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:500|Lato:300');
+$show-font: 'Rajdhani', sans-serif;
+$read-font: 'Lato', sans-serif;
