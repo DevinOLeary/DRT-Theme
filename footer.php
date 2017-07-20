@@ -24,12 +24,16 @@
           <a href="" target="_blank" class="author-link">Designed and Built by Devin O'Leary</a>
         </li>
         <li>
-          <a href="" target="_blank" class="admin-link">Wordpress Admin</a>
+          <a href="http://localhost:8888/wordpress/wp-admin/" target="_blank" class="admin-link">Wordpress Admin</a>
         </li>
       </ul>
 
     </div>
   </footer>
+  <!-- Jquery -->
+  <script src="<?php bloginfo('template_directory');?>/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/build/js/index.js"></script>
   <?php wp_footer(); ?>
+  <!-- Need to figure out how to enqueue this -->
   </body>
 </html>

@@ -1,4 +1,4 @@
-
+var $ = jQuery.noConflict();
 
 
 // //Menu appears below fold
@@ -17,35 +17,37 @@
 //   });
 // });
 
+
 //at screen width, menu changes to hamburger menu
 function mobileViewUpdate() {
-
-  if ($(window).width() < 700) {
+    $("#hamburger").hide();
+  if ($(window).width() < 850) {
     $("#desktopMenu").hide();
-    $("#hamburger").removeClass('hide');
+    $("#hamburger").show();
     $("#scrollHamburger").removeClass('hide');
     $("#scrollDesktopMenu").addClass('hide');
   } else {
-    $("#desktopMenu").removeClass('hide');
+    $("#desktopMenu").show();
     $("#hamburger").addClass('hide');
     $("#scrollHamburger").addClass('hide');
     $("#mobileMenu").addClass('hide');
     $("#scrollDesktopMenu").removeClass('hide');
   }
 }
-$(window).on('load', mobileViewUpdate());
+$(window).ready(mobileViewUpdate);
 $(window).resize(mobileViewUpdate);
-//
-//
-//  //on hamburger click, menu opens
-// $(function() {
-//   $("#hamburger, #scrollHamburger").on('click', function() {
-//     $("#mobileMenu").removeClass('hide');
-//   });
-// });
-//  //on exit click, menu closes
-// $(function() {
-//   $("#exit").on('click', function() {
-//     $("#mobileMenu").addClass('hide');
-//   });
-// });
+
+
+ //on hamburger click, menu opens
+$(function() {
+  $('#mobileMenu').hide();
+  $("#hamburger, #scrollHamburger").on('click', function() {
+    $("#mobileMenu").show();
+  });
+});
+ //on exit click, menu closes
+$(function() {
+  $("#exit").on('click', function() {
+    $("#mobileMenu").hide();
+  });
+});

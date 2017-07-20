@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:500|Lato:300");
+
 body {
   width: 100%;
   height: 100%;
@@ -87,8 +88,24 @@ h1, h2, h3, h4, h5 {
   top: 20px;
   right: 20px; }
 
-.site-nav {
-  z-index: 50; }
+.site-nav ul {
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  margin-right: 20px; }
+  .site-nav ul li {
+    padding: .5em .5em;
+    z-index: 100; }
 
 .indented-title {
   text-indent: -999999999px;
@@ -99,17 +116,20 @@ h1, h2, h3, h4, h5 {
   width: 100vw; }
 
 .footer-block {
-  height: 270px;
+  min-height: 270px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .footer-block .footer-menu {
     margin-top: 2em; }
     .footer-block .footer-menu .footer-nav ul {
@@ -124,9 +144,9 @@ h1, h2, h3, h4, h5 {
               flex-direction: column;
       height: 200px; }
       .footer-block .footer-menu .footer-nav ul li {
-        margin: .5em 2em; }
+        padding: .5em; }
   .footer-block .contribution-links {
-    margin: 1em; }
+    margin: .5em; }
     .footer-block .contribution-links ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -147,28 +167,28 @@ h1, h2, h3, h4, h5 {
             -ms-flex-direction: row;
                 flex-direction: row; }
         .footer-block .contribution-links ul .social-media-block li {
-          padding: 1em; }
+          padding: .5em; }
       .footer-block .contribution-links ul li .author-link, .footer-block .contribution-links ul li .admin-link {
-        margin-top: 1em;
+        margin-top: .5em;
         display: block; }
 
 h1, h2, h3, h4 {
   font-family: "Rajdhani", sans-serif; }
 
 h1 {
-  font-size: 64px; }
-
-h2 {
   font-size: 48px; }
 
-h3 {
+h2 {
   font-size: 36px; }
 
-h4 {
+h3 {
   font-size: 24px; }
 
+h4 {
+  font-size: 18px; }
+
 p {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Lato", sans-serif; }
 
 .colored-divider {
@@ -179,12 +199,15 @@ p {
   background-color: rgba(0, 0, 0, 0.8);
   border: none; }
 
+.menu-icon {
+  color: white; }
+
 .site-header {
   background-color: rgba(0, 0, 0, 0.8); }
   .site-header .site-nav ul {
     z-index: 100; }
     .site-header .site-nav ul li {
-      font-size: 20px;
+      font-size: 16px;
       font-family: "Rajdhani", sans-serif; }
       .site-header .site-nav ul li a {
         color: white; }
@@ -201,11 +224,11 @@ p {
   background-color: #EF504F; }
   .footer-block .footer-nav a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Lato", sans-serif; }
   .footer-block .contribution-links ul li a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Lato", sans-serif; }
 
 .instagram-icon {
@@ -236,22 +259,24 @@ a, a:hover, a:focus, a:visited {
   text-decoration: none;
   cursor: pointer; }
 
-@media screen and (min-width: 800px) {
-  .site-nav ul {
-    width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 64px; }
+  h2 {
+    font-size: 48px; }
+  h3 {
+    font-size: 36px; }
+  h4 {
+    font-size: 24px; }
+  p {
+    font-size: 20px; }
+  .site-header .site-nav ul li {
+    font-size: 20px;
+    padding: .5em 2em; }
+  .site-header .site-nav ul li:last-child {
+    max-height: 25px; }
+  .footer-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    float: right;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 25px;
-    margin-right: 20px; }
-    .site-nav ul li {
-      padding: .5em 2em;
-      z-index: 100; } }
+            flex-direction: row; } }

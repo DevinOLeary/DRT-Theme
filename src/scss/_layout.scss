@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5 {
   right:20px;
   top:40px;
   z-index: 100;
+
 }
 .scroll-menu-icon{
   position: absolute;
@@ -89,7 +90,19 @@ h1, h2, h3, h4, h5 {
 }
 //mobile end
 .site-nav {
-  z-index: 50;
+  ul {
+    width:72%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 20px;
+    li {
+      padding: .5em .5em;
+      z-index: 100;
+    }
+  }
 }
 .indented-title {
   text-indent: -999999999px;
@@ -104,11 +117,12 @@ h1, h2, h3, h4, h5 {
 
 //Footer
 .footer-block {
-  height:270px;
+  min-height:270px;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   .footer-menu {
     margin-top: 2em;
     .footer-nav {
@@ -118,13 +132,13 @@ h1, h2, h3, h4, h5 {
         flex-direction: column;
         height: 200px;
         li {
-          margin: .5em 2em;
+          padding: .5em;
         }
       }
     }
   }
   .contribution-links {
-    margin: 1em;
+    margin: .5em;
     ul {
       display: flex;
       flex-direction: column;
@@ -133,12 +147,12 @@ h1, h2, h3, h4, h5 {
         display: flex;
         flex-direction: row;
         li{
-          padding:1em;
+          padding:.5em;
         }
       }
       li {
         .author-link, .admin-link {
-          margin-top: 1em;
+          margin-top: .5em;
           display: block;
         }
       }

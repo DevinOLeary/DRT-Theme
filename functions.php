@@ -2,8 +2,8 @@
 // Import stylesheet
 function DRT_resources() {
   wp_enqueue_style('style', get_stylesheet_uri());
-  wp_register_script('index', get_template_directory_uri() . '/build/js/#', true);
-  wp_enqueue_script('index');
+  wp_register_script('main', get_template_directory_uri() . '/build/js/main.js', array('jquery'), true);
+  wp_enqueue_script('main');
 }
 add_action('wp_enqueue_scripts', 'DRT_resources');
 
