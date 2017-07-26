@@ -21,13 +21,13 @@
   </ul>
 </section>
 <!-- Training Packages Container -->
-<section class="content-block flex-center-column">
+<section class="content-block center">
   <h2>Training Packages</h2>
   <hr class="colored-divider"/>
   <ul class="row-content">
-    <li class="small-ring"></li>
-    <li class="middle-ring"></li>
-    <li class="large-ring"></li>
+    <li class="small-ring"><h3>Small Ring</h3></li>
+    <li class="middle-ring"><h3>Middle Ring</h3></li>
+    <li class="large-ring"><h3>Large Ring</h3></li>
   </ul>
   <!-- Package content box -->
   <article>
@@ -46,23 +46,35 @@
   </article>
 </section>
 <!-- Secondary Services -->
-<section>
+<section class="content-block">
   <h2>Some Other Ideas</h2>
   <hr class="colored-divider"/>
-  <!-- Training Camps -->
-  <figure id="trainingCamp" class="training-camp-pic">
-  </figure>
-  <!-- Performance Evaluation -->
-  <figure id="performanceEval" class="performance-eval-pic">
-  </figure>
+  <br/>
+  <div class="row-content">
+    <!-- Training Camps -->
+    <figure id="trainingCamp" class="training-camp-pic content-block">
+      <div class="overlay-full center">
+        <h2>Training Camps</h2>
+      </div>
+    </figure>
+    <!-- Performance Evaluation -->
+    <figure id="performanceEval" class="performance-eval-pic content-block">
+      <div class="overlay-full center">
+        <h2>Performance Evaluation</h2>
+      </div>
+    </figure>
+  </div>
   <!-- Content Box -->
   <article>
   </article>
 </section>
+<hr class="section-divider"/>
 <!-- Plan Contact -->
-<section>
-  <h4>Get Started on a Plan with Don</h4>
+<section class="content-block center">
+  <h3>Get Started on a Plan with Don</h3>
+  <br/>
   <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist. Hammock trust fund small batch beard occupy. Blue bottle mustache quinoa raw denim heirloom brunch offal bicycle rights paleo 90’s PBR&B forage cray cronut.</p>
-  <a><button class="button-cta">Start Planning</button></a>
+  <br/>
+  <a href="<?php echo get_permalink(44);?>"><button class="button-cta"><h4>Let's Talk</h4></button></a>
 </section>
 <?php get_footer(); ?>

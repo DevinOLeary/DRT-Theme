@@ -6,7 +6,7 @@
     <div class="overlay-left">
       <div class="banner-copy-container">
         <h3>Get the training skills you need to feel and perform your best on the bike</h3>
-        <a href=""><button class="cta-button"><h4>Start Planning</h4></button></a>
+        <a href="<?php echo get_permalink(48); ?>"><button class="button-cta"><h4>Start Planning</h4></button></a>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
   <div class="diagonal-overlay"></div>
   <h2>The DRT Philosophy</h2>
   <hr class="colored-divider"/>
-  <article class="one-column-content">
+  <article class="center">
     <aside>
       <img src="<?php bloginfo('template_directory');?>/build/images/philosobike-rastor.png" width=290 height=110 />
     </aside>
@@ -41,13 +41,13 @@
   <?php
     get_template_part('template-parts/content', 'featured');
   ?>
-  <a href="get_permalink('bike-news')"><button class="cta-button"><h4>View All Articles</h4></button></a>
+  <a href="<?php echo get_permalink(41); ?>"><button class="button-cta"><h4>View All Articles</h4></button></a>
 </section>
 <hr class="section-divider"/>
 <section class="content-block flex-center-column">
   <h3>Let's Speed Things Up</h3>
   <br/><br/>
-  <button class="cta-button"><h4>Start Planning</h4></button>
+  <a href="<?php echo get_permalink(48); ?>"><button class="button-cta"><h4>Start Planning</h4></button></a>
 </section>
 
 

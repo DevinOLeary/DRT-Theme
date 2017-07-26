@@ -81,11 +81,7 @@
   .banner {
     background-color: $overlay;
   }
-  .content-block {
-    h2,p{
-        color: $text-colored;
-    }
-  }
+
   .above-fold-container {
     background-color: $background-dark;
     color: $text-inverse;
@@ -108,10 +104,18 @@
   }
 
   .training-camp-pic {
-    background-image: url('build/images/');
+    background-image: url('build/images/training-camp.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .performance-eval-pic {
-    background-image: url('build/images/');
+    background-image: url('build/images/performance-testing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .training-camp-pic:hover , .performance-eval-pic:hover {
+    cursor: pointer;
+    
   }
 
   .ad-block {
@@ -128,6 +132,11 @@
   }
   .overlay-left {
     background: $overlay-dark-left;
+    background-size:cover;
+    color: $text-inverse;
+  }
+  .overlay-full {
+    background: $overlay-dark-full;
     background-size:cover;
     color: $text-inverse;
   }
