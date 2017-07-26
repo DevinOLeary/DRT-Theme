@@ -5,9 +5,13 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
+aside, p {
+  display: block;
+}
 section {
   display: block;
 }
+
 
 
 // text
@@ -30,6 +34,9 @@ h1, h2, h3, h4, h5 {
 .hide {
   display: none;
 }
+.insta-logo {
+  padding-left: .5em;
+}
 
 //header
 .site-header{
@@ -38,7 +45,10 @@ h1, h2, h3, h4, h5 {
     img{
       display: inline-block;
       margin: 20px;
-      float: left;
+      position: absolute;
+      top:0px;
+      left:20px;
+      z-index:100;
     }
   }
 }
@@ -110,10 +120,158 @@ h1, h2, h3, h4, h5 {
 }
 
 //A-space
-.banner {
+.home-banner-container{
+  position: relative;
   height: 50vh;
   width: 100vw;
 }
+.home-banner {
+  height:150%;
+  width: 100vw;
+  position:absolute;
+  top: -30%;
+  right: 0;
+}
+.step-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em 20%;
+}
+.above-fold-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  position: relative;
+  p {
+    width:80%;
+    max-width: 800px;
+  }
+  .step-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em 10%;
+  }
+  .diagonal-overlay {
+      width: 50%;
+      height: 0;
+      overflow: hidden;
+  }
+  .diagonal-overlay:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 100vh solid transparent;
+      border-right: 90vw solid $overlay;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Content Block
+.content-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:400px;
+  padding: 5%;
+  .diagonal-overlay {
+      width: 50%;
+      height: 0;
+      padding-top: 50px;
+      overflow: hidden;
+  }
+  .diagonal-overlay:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 50vh solid transparent;
+      border-right: 90vw solid $overlay;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+  .row-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+  }
+  .one-column-content {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  .blurb {
+    width:80%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 50px;
+  }
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+//Banners
+.sub-banner-container {
+  height: 80vh;
+  width:100%;
+  position: relative;
+}
+.drt-team-banner {
+  height: 100%;
+  width: 100%;
+}
+.banner-copy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:40%;
+  margin: 5%;
+  h3{
+    width: 100%;
+    margin: 30px 7%;
+    text-align:center;
+  }
+  button {
+
+  }
+}
+//overlay
+  .overlay-left, .overlay-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .overlay-left {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content:center;
+  }
+  .overlay-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
 
 //Footer
 .footer-block {

@@ -32,7 +32,7 @@
   </footer>
   <!-- Jquery -->
   <script src="<?php bloginfo('template_directory');?>/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="<?php bloginfo('template_directory');?>/build/js/index.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/build/js/main.js"></script>
   <?php wp_footer(); ?>
   <!-- Need to figure out how to enqueue this -->
   </body>

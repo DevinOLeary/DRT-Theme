@@ -2,8 +2,11 @@
 
 
   //text
-  h1, h2, h3, h4 {
+  h1, h2, h3 {
     font-family: $show-font;
+  }
+  h4, p {
+    font-family: $read-font;
   }
   h1{
     font-size: $mobile-title;
@@ -19,7 +22,16 @@
   }
   p{
     font-size: $mobile-read;
-    font-family: $read-font;
+  }
+
+  .text-colored {
+    color: $text-colored;
+  }
+  .text-inverse {
+    color: $text-inverse;
+  }
+  .show-font {
+    font-family: $show-font;
   }
 
   //elements
@@ -28,8 +40,12 @@
     border: none;
   }
   .section-divider {
-    background-color: $dark-background;
+    background-color: $background-dark;
     border: none;
+  }
+
+  a:focus ,button:focus {
+    outline: none;
   }
 
 
@@ -38,7 +54,7 @@
       color: white;
     }
     .site-header{
-      background-color: $dark-background;
+      background-color: $background-dark;
       .site-nav {
         ul{
           z-index:100;
@@ -46,14 +62,17 @@
             font-size: $mobile-read;
             font-family: $show-font;
             a {
-              color: $inverse-text;
+              color: $text-inverse;
             }
           }
           li:last-child {
-            background-color: $cta-button;
+            background-color: $button-cta;
           }
         }
       }
+    }
+    .clear-background {
+      background-color:$background-clear;
     }
 
 
@@ -64,16 +83,60 @@
   }
   .content-block {
     h2,p{
-        color: $colored-text;
+        color: $text-colored;
+    }
+  }
+  .above-fold-container {
+    background-color: $background-dark;
+    color: $text-inverse;
+  }
+  //Banners
+  .home-banner {
+    background-image: url('build/images/Don-Racing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .drt-team-banner {
+    background-image: url('build/images/podium.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-copy-container {
+    h3 {
+      color: $text-inverse;
     }
   }
 
+  .training-camp-pic {
+    background-image: url('build/images/');
+  }
+  .performance-eval-pic {
+    background-image: url('build/images/');
+  }
+
+  .ad-block {
+    background-color: $background-dark;
+    color: $text-inverse;
+    p {
+      color: inherit;
+    }
+  }
+  //overlay
+  .overlay-right{
+    background: $overlay-dark-right;
+    background-size: cover;
+  }
+  .overlay-left {
+    background: $overlay-dark-left;
+    background-size:cover;
+    color: $text-inverse;
+  }
   // Footer
   .footer-block {
     background-color: $DRT-red;
     .footer-nav {
       a {
-        color: $inverse-text;
+        color: $text-inverse;
         font-size: $mobile-read;
         font-family: $read-font;
       }
@@ -81,7 +144,7 @@
     .contribution-links {
       ul li {
         a {
-          color: $inverse-text;
+          color: $text-inverse;
           font-size: $mobile-read;
           font-family: $read-font;
         }

@@ -10,23 +10,25 @@ $clear: rgba(0,0,0,0);
 
 
 //blocks
-$dark-background: $DRT-black;
+$background-dark: $DRT-black;
+$background-clear: $clear;
 $overlay: $clear-gray;
 //elements
-$cta-button: $DRT-red;
+$button-cta: $DRT-red;
 $divider-line: $DRT-red;
 
-
-$overlay-grey:linear-gradient(to bottom, $DRT-red, $clear);;
+//Overlays
+$overlay-dark-right:linear-gradient(to left, $DRT-black, $clear);
+$overlay-dark-left:linear-gradient(to right, $DRT-black, $clear);
 $overlay-white: linear-gradient(to top, white, $clear);
 
 
 // text
-$inverse-text: $white;
-$colored-text: $DRT-black;
+$text-inverse: $white;
+$text-colored: $DRT-black;
 //desktop
 $desktop-read: 20px;
-$desktop-cta-text: 24px;
+$desktop-cta-text: 20px;
 $desktop-subtitle: 36px;
 $desktop-section-title: 48px;
 $desktop-title: 64px;
@@ -37,6 +39,6 @@ $mobile-subtitle: 24px;
 $mobile-section-title: 36px;
 $mobile-title: 48px;
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:500|Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300');
 $show-font: 'Rajdhani', sans-serif;
 $read-font: 'Lato', sans-serif;

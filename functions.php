@@ -7,6 +7,22 @@ function DRT_resources() {
 }
 add_action('wp_enqueue_scripts', 'DRT_resources');
 
+function theme_features() {
+  //theme logo
+  add_theme_support( 'custom-logo', array(
+    'flex-height' => true,
+    'flex-width'  => true,
+    'header-text' => array('site-logo'),
+  ) );
+  //image sizes
+  add_image_size( 'logo', $width = 56, $height = 145, $crop = false );
+  //post formats
+  add_theme_support( 'post-formats', array( 'aside', 'image' ) );
+
+}
+
+add_action('after_setup_theme', 'theme_features');
+
 
 function DRT_features() {
   //add menus
@@ -18,21 +34,13 @@ function DRT_features() {
   //add featured image
   add_theme_support('post-thumbnails');
   add_image_size('featured-thumb', 322, 375);
+  //post-formats to post-type page
+  add_post_type_support( 'page', 'post-formats' );
+  register_taxonomy_for_object_type( 'post_format', 'page' );
 }
 add_action('init', 'DRT_features');
 
-function theme_features() {
-  //theme logo
-  add_theme_support( 'custom-logo', array(
-    'flex-height' => true,
-    'flex-width'  => true,
-    'header-text' => array('site-logo'),
-  ) );
-  //image sizes
-  add_image_size( 'logo', $width = 56, $height = 145, $crop = false );
-}
 
-add_action('after_setup_theme', 'theme_features');
 
 // title tags
 add_theme_support('title-tag');
@@ -45,6 +53,7 @@ $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_th
 return $html;
 }
 add_filter( 'post_thumbnail_html', 'wpb_autolink_featured_images', 10, 3 );
+
 
 
 ?>

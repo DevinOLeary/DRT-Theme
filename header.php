@@ -3,12 +3,16 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     <?php wp_head(); ?>
   </head>
 
   <body <?php body_class(); ?>>
-
-    <header class="site-header">
+    <?php  if(is_front_page()): ?>
+      <header class="site-header clear-background">
+      <?php else: ?>
+      <header class="site-header">
+    <?php endif; ?>
       <?php
           if ( function_exists( 'the_custom_logo' ) ) {
         the_custom_logo();

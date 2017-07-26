@@ -6,13 +6,18 @@
 
 
 
-//contact page submit button
-.action-button{
+.cta-button {
+  padding: 20px;
+  background-color:$button-cta;
   border: none;
-  background-color:$cta-button;
-  padding:10px 50px;
-  margin:2em;
-  font-weight: 300;
-  font-size:18px;
-  min-width:200px;
+  color: $text-inverse;
+}
+.sub-button {
+  padding: 20px;
+  background-color: $background-clear;
+  border: 2px solid $button-cta;
+  color: $text-inverse;
+}
+button:hover {
+  cursor: pointer;
 }
