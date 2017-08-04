@@ -18,6 +18,11 @@
   background-color: $background-clear;
   border: 2px solid $button-cta;
   color: $text-inverse;
+  transition: .3s;
+}
+.sub-button:hover {
+  background-color: $background-red;
+
 }
 button:hover {
   cursor: pointer;

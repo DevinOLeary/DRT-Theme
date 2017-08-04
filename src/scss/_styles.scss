@@ -5,7 +5,7 @@
   h1, h2, h3 {
     font-family: $show-font;
   }
-  h4, p {
+  h4, h5, p {
     font-family: $read-font;
   }
   h1{
@@ -22,6 +22,9 @@
   }
   p{
     font-size: $mobile-read;
+  }
+  a {
+    color: $text-colored;
   }
 
   .text-colored {
@@ -53,6 +56,9 @@
     .menu-icon {
       color: white;
     }
+    .menu-icon:hover {
+      cursor: pointer;
+    }
     .site-header{
       background-color: $background-dark;
       .site-nav {
@@ -74,6 +80,24 @@
     .clear-background {
       background-color:$background-clear;
     }
+    .mobile-menu {
+      background-color: $background-red;
+      color: $text-inverse;
+      a {
+        color: inherit;
+        font-size: $mobile-section-title;
+        font-family: $show-font;
+        display: block;
+      }
+      .exit {
+        font-size: $mobile-title;
+        font-family: $show-font;
+      }
+      .exit:hover {
+        cursor: pointer;
+      }
+
+    }
 
 
   //Blocks
@@ -85,6 +109,11 @@
   .above-fold-container {
     background-color: $background-dark;
     color: $text-inverse;
+  }
+  .step-list-container {
+    a {
+      color: $text-inverse;
+    }
   }
   //Banners
   .home-banner {
@@ -102,6 +131,11 @@
       color: $text-inverse;
     }
   }
+  .team-ride-pic {
+    background-image: url('build/images/team-ride.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .training-camp-pic {
     background-image: url('build/images/training-camp.jpeg');
@@ -115,16 +149,44 @@
   }
   .training-camp-pic:hover , .performance-eval-pic:hover {
     cursor: pointer;
-    
+
+  }
+
+  .fit-pic {
+    background-image: url('build/images/fit-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .ad-block {
     background-color: $background-dark;
     color: $text-inverse;
-    p {
+    p,a {
       color: inherit;
     }
   }
+  .category-block {
+    background-color: $background-dark;
+    color: $text-inverse;
+    p,a {
+      color: inherit;
+    }
+  }
+  .training-plan-block {
+    p {
+      margin: 0;
+    }
+  }
+
+  .ride-info-container {
+    background-color: $background-dark;
+    color: $text-inverse;
+    a {
+      color: inherit;
+    }
+  }
+
+
   //overlay
   .overlay-right{
     background: $overlay-dark-right;

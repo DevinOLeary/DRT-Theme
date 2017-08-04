@@ -25,7 +25,7 @@
         <h4>Menu</h4>
       </div>
       <div class="mobile-menu" id="mobileMenu">
-        <h1 id="title">DRT</h1>
+        <a href="<?php echo get_permalink(27); ?>"><h1 id="title">DRT</h1></a>
         <aside class="exit" id="exit"><span>X<span></aside>
         <?php wp_nav_menu(array('theme_location' => 'mobile')); ?>
       </div>

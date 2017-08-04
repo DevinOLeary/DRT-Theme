@@ -33,7 +33,7 @@ function DRT_features() {
   register_nav_menu('footer', 'Footer Menu');
   //add featured image
   add_theme_support('post-thumbnails');
-  add_image_size('featured-thumb', 322, 375);
+  set_post_thumbnail_size( 300, 300, true);
   //post-formats to post-type page
   add_post_type_support( 'page', 'post-formats' );
   register_taxonomy_for_object_type( 'post_format', 'page' );
@@ -46,13 +46,19 @@ add_action('init', 'DRT_features');
 add_theme_support('title-tag');
 
 
-
+// Filters
 function wpb_autolink_featured_images( $html, $post_id, $post_image_id, $overlay ) {
 
 $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
 return $html;
 }
 add_filter( 'post_thumbnail_html', 'wpb_autolink_featured_images', 10, 3 );
+
+function remove_more_link_scroll( $link ) {
+	$link = preg_replace( '|#more-[0-9]+|', '', $link );
+	return $link;
+}
+add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
 
 
 

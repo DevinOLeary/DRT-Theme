@@ -11,10 +11,11 @@ $sticky = get_option( 'sticky_posts' );
   if ( $query->have_posts() ) {
       $query->the_post();
       ?>
-        <h3><?php the_title(); ?></h3>
-        <p>written <?php the_date();?></p>
+        <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
         <hr class="colored-divider"/>
-        <p><?php the_content(); ?></p>
+        <br/>
+        <?php the_post_thumbnail($size = 'featured-thumb'); ?>
+        <?php the_content(); ?>
       <?php
   }
 }

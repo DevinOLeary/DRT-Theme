@@ -13,7 +13,9 @@ $clear-black:rgba(0,0,0,.3);
 //blocks
 $background-dark: $DRT-black;
 $background-clear: $clear;
-$overlay: $clear-gray;
+$background-white: $white;
+$background-red: $DRT-red;
+
 //elements
 $button-cta: $DRT-red;
 $divider-line: $DRT-red;
@@ -23,6 +25,7 @@ $overlay-dark-right:linear-gradient(to left, $DRT-black, $clear);
 $overlay-dark-left:linear-gradient(to right, $DRT-black, $clear);
 $overlay-white: linear-gradient(to top, white, $clear);
 $overlay-dark-full: $clear-black;
+$overlay: $clear-gray;
 
 
 // text

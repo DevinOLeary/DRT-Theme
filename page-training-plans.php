@@ -1,48 +1,45 @@
 <?php get_header(); ?>
 <!-- A-space Container -->
-<section class="above-fold-container">
+<header class="above-fold-container">
   <div class="diagonal-overlay"></div>
   <h1>Training Plans</h1>
   <hr class="colored-divider"/>
   <p>Suspendisse velit lectus, tempus ut bibendum ut, luctus ut libero. Aliquam vel mi eget ante molestie tincidunt. Etiam ipsum leo, venenatis vel tempus vel, egestas eget enim.</p>
   <ul>
     <li class="step-list-container">
-      <figure><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></figure>
-      <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist.</p>
+      <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
+      <br/>
+      <p>Read through the packages and find one that sounds right for you.</p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon"><h4 class="show-font">Step <br/>2</h4></div></figure>
+      <br/>
       <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist.</p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon"><h4 class="show-font">Step <br/>3</h4></div></figure>
+      <br/>
       <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist.</p>
     </li>
   </ul>
-</section>
+</header>
 <!-- Training Packages Container -->
 <section class="content-block center">
-  <h2>Training Packages</h2>
+  <h2 id="trainingPackages">Training Packages</h2>
   <hr class="colored-divider"/>
   <ul class="row-content">
-    <li class="small-ring"><h3>Small Ring</h3></li>
-    <li class="middle-ring"><h3>Middle Ring</h3></li>
-    <li class="large-ring"><h3>Large Ring</h3></li>
+    <a href="#planContent" id="planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>
+    <a href="#planContent" class="anchor-link"><li class="middle-ring"><h3>Middle Ring</h3></li></a>
+    <a href="#planContent" class="anchor-link"><li class="large-ring"><h3>Large Ring</h3></li></a>
   </ul>
   <!-- Package content box -->
-  <article>
-  </article>
+  <div class="training-plan-block-container">
+    <?php get_template_part('template-parts/content', 'training-plan'); ?>
+  </div>
   <!-- No Chain Block -->
   <article class="content-block ad-block">
     <div class="diagonal-overlay"></div>
-    <h3>The Ultimate: No Chain Plan</h3>
-    <hr class="colored-divider"/>
-    <p>tHammock trust fund small batch beard occupy. Blue bottle mustache quinoa raw denim heirloom brunch offal bicycle rights paleo 90’s PBR&B forage cray cronut.</p>
-    <ul>
-      <li class="bullet-list"><p>Some Great Benefit</p></li>
-      <li class="bullet-list"><p>Another Great Benefit</p></li>
-      <li class="bullet-list"><p>Even More Great Benefits!</p></li>
-    </ul>
+    <?php get_template_part('template-parts/content', 'no-chain'); ?>
   </article>
 </section>
 <!-- Secondary Services -->
@@ -52,20 +49,21 @@
   <br/>
   <div class="row-content">
     <!-- Training Camps -->
-    <figure id="trainingCamp" class="training-camp-pic content-block">
+    <a href="#otherPlanContainer"><figure id="trainingCamp" class="training-camp-pic content-block">
       <div class="overlay-full center">
         <h2>Training Camps</h2>
       </div>
-    </figure>
+    </figure></a>
     <!-- Performance Evaluation -->
-    <figure id="performanceEval" class="performance-eval-pic content-block">
+    <a href="#otherPlanContainer"><figure id="performanceEval" class="performance-eval-pic content-block">
       <div class="overlay-full center">
         <h2>Performance Evaluation</h2>
       </div>
-    </figure>
+    </figure></a>
   </div>
   <!-- Content Box -->
-  <article>
+  <article id="otherPlanContainer" class="content-block">
+    <?php get_template_part('template-parts/content', 'other-plans');?>
   </article>
 </section>
 <hr class="section-divider"/>

@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 <h1 class="indented-title"><?php bloginfo('name'); ?></h1>
 
-<section class="home-banner-container">
-  <div class="home-banner">
+<section class="a-space-banner-container">
+  <div class="a-space-banner home-banner">
     <div class="overlay-left">
-      <div class="banner-copy-container">
+      <article class="banner-copy-container">
         <h3>Get the training skills you need to feel and perform your best on the bike</h3>
         <a href="<?php echo get_permalink(48); ?>"><button class="button-cta"><h4>Start Planning</h4></button></a>
-      </div>
+      </article>
     </div>
   </div>
 </section>
-<section class="content-block flex-center-column">
+<section class="content-block center">
   <div class="diagonal-overlay"></div>
   <h2>The DRT Philosophy</h2>
   <hr class="colored-divider"/>
@@ -37,14 +37,14 @@
   <div class="drt-team-banner ">
   </div>
 </section>
-<section class="content-block flex-center-column">
+<section class="content-block center">
   <?php
     get_template_part('template-parts/content', 'featured');
   ?>
   <a href="<?php echo get_permalink(41); ?>"><button class="button-cta"><h4>View All Articles</h4></button></a>
 </section>
 <hr class="section-divider"/>
-<section class="content-block flex-center-column">
+<section class="content-block center">
   <h3>Let's Speed Things Up</h3>
   <br/><br/>
   <a href="<?php echo get_permalink(48); ?>"><button class="button-cta"><h4>Start Planning</h4></button></a>
