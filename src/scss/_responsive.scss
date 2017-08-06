@@ -1,23 +1,73 @@
 
-@media screen and (min-width: 800px){
-
-//Nav
-.site-nav {
-  ul {
-    width:80%;
-    display: flex;
-    flex-direction: row;
-    float: right;
-    justify-content: space-between;
-    margin-top: 25px;
-    margin-right: 20px;
-    li {
-      padding: .5em 2em;
-      z-index: 100;
-    }
-  }
-}
-
+@media only screen and (min-width: 1000px){
 
 //text
+  h1{
+    font-size: $desktop-title;
+  }
+  h2{
+    font-size: $desktop-section-title;
+  }
+  h3{
+    font-size: $desktop-subtitle;
+  }
+  h4{
+    font-size: $desktop-cta-text;
+  }
+  p{
+    font-size: $desktop-read;
+  }
+  //Nav
+
+  .site-header{
+    .site-nav {
+      ul{
+        li {
+          font-size: $desktop-read;
+          padding: .5em 2em;
+        }
+        li:last-child {
+          max-height: 25px;
+        }
+      }
+    }
+  }
+  .footer-block {
+    flex-direction: row;
+  }
+
+  //Content blocks
+  .content-block{
+    .two-column-content {
+      flex-direction: row;
+    }
+  }
+
+  .small-ring{
+    width: 170px;
+    height: 170px;
+  }
+   .middle-ring{
+     width: 210px;
+     height: 210px;
+   }
+   .large-ring {
+     width: 270px;
+     height: 270px;
+   }
+
+  .training-camp-pic, .performance-eval-pic {
+    height: 50vh;
+  }
+
+
+
+
+
+
+
+
+
+
+
 }

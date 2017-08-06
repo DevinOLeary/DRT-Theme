@@ -1,0 +1,20 @@
+{
+  "name": "drt2",
+  "description": "DRT Theme",
+  "main": "gulpfile.js",
+  "authors": [
+    "Devin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/djoleary007/DRT-Theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

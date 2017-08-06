@@ -1,35 +1,49 @@
+
 // Color
 $DRT-red: #EF504F;
 $DRT-black: rgba(0,0,0,.8);
 $white: rgb(255,255,255);
 $clear-gray: rgba(155,155,155,.1);
 $clear: rgba(0,0,0,0);
+$clear-black:rgba(0,0,0,.3);
 
 
 
-// Objects
-//text
-$inverse-text: $white;
-$colored-text: $DRT-black;
+
 //blocks
-$dark-background: $DRT-black;
-$overlay: $clear-gray;
+$background-dark: $DRT-black;
+$background-clear: $clear;
+$background-white: $white;
+$background-red: $DRT-red;
+
 //elements
-$cta-button: $DRT-red;
+$button-cta: $DRT-red;
 $divider-line: $DRT-red;
 
-
-$overlay-grey:linear-gradient(to bottom, $DRT-red, $clear);;
+//Overlays
+$overlay-dark-right:linear-gradient(to left, $DRT-black, $clear);
+$overlay-dark-left:linear-gradient(to right, $DRT-black, $clear);
 $overlay-white: linear-gradient(to top, white, $clear);
+$overlay-dark-full: $clear-black;
+$overlay: $clear-gray;
 
 
-// Fonts
-$read: 20px;
-$cta-text: 24px;
-$subtitle: 36px;
-$section-title: 48px;
-$title: 64px;
+// text
+$text-inverse: $white;
+$text-colored: $DRT-black;
+//desktop
+$desktop-read: 20px;
+$desktop-cta-text: 20px;
+$desktop-subtitle: 36px;
+$desktop-section-title: 48px;
+$desktop-title: 64px;
+//mobile
+$mobile-read: 16px;
+$mobile-cta-text: 18px;
+$mobile-subtitle: 24px;
+$mobile-section-title: 36px;
+$mobile-title: 48px;
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:500|Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300');
 $show-font: 'Rajdhani', sans-serif;
 $read-font: 'Lato', sans-serif;

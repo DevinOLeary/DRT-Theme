@@ -1,12 +1,18 @@
-
+// General
 body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   margin: 0;
 }
+aside, p {
+  display: block;
+}
 section {
   display: block;
+}
+figure {
+  margin: 0;
 }
 
 
@@ -15,6 +21,28 @@ p {
   line-height: 30px;
 }
 h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+//General Layout
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // p {
+  //   max-width: 600px;
+  // }
+}
+.row-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.text-centered {
   text-align: center;
 }
 
@@ -27,9 +55,19 @@ h1, h2, h3, h4, h5 {
   width: 80%;
   height: 3px;
 }
+.verticle-divider {
+  height:3px;
+  width: 300px;
+  transform: rotate(90deg);
+}
 .hide {
   display: none;
 }
+.insta-logo {
+  padding-left: .5em;
+}
+
+
 
 //header
 .site-header{
@@ -38,7 +76,10 @@ h1, h2, h3, h4, h5 {
     img{
       display: inline-block;
       margin: 20px;
-      float: left;
+      position: absolute;
+      top:0px;
+      left:20px;
+      z-index:100;
     }
   }
 }
@@ -50,6 +91,7 @@ h1, h2, h3, h4, h5 {
   right:20px;
   top:40px;
   z-index: 100;
+
 }
 .scroll-menu-icon{
   position: absolute;
@@ -69,16 +111,24 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: center;
   h1{
-    margin-bottom:100px;
+    margin-bottom:50px;
   }
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height:50vh;
-    li {
-
+  .menu {
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height:50vh;
+      width:100%;
+      li {
+        text-align: center;
+        width: 100%;
+        a{
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -89,7 +139,19 @@ h1, h2, h3, h4, h5 {
 }
 //mobile end
 .site-nav {
-  z-index: 50;
+  ul {
+    width:72%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 20px;
+    li {
+      padding: .5em .5em;
+      z-index: 100;
+    }
+  }
 }
 .indented-title {
   text-indent: -999999999px;
@@ -97,18 +159,300 @@ h1, h2, h3, h4, h5 {
 }
 
 //A-space
-.banner {
+.a-space-banner-container{
+  position: relative;
   height: 50vh;
+  min-height: 450px;
   width: 100vw;
 }
-
-//Footer
-.footer-block {
-  height:270px;
-  width: 100%;
+.a-space-banner {
+  height:130%;
+  width: 100vw;
+  position:absolute;
+  top: -30%;
+  right: 0;
+}
+.child-a-space-banner {
+  height:100%;
+  width: 100vw;
+}
+.step-list-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 2em 20%;
+}
+.above-fold-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  position: relative;
+  p {
+    width:80%;
+    max-width: 800px;
+  }
+  .step-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em 10%;
+  }
+  .diagonal-overlay {
+      width: 50%;
+      height: 0;
+      overflow: hidden;
+  }
+  .diagonal-overlay:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 100vh solid transparent;
+      border-right: 90vw solid $overlay;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Content Block
+.content-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  min-height:300px;
+  width: 100%;
+  p {
+    width: 60%;
+    min-width: 300px;
+    margin: 0;
+  }
+  .diagonal-overlay {
+      width: 50%;
+      height: 0;
+      padding-top: 0px;
+      overflow: hidden;
+  }
+  .diagonal-overlay:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 50vh solid transparent;
+      border-right: 50vw solid $overlay;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+  .one-column-content {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    p {
+      width: 60%;
+      min-width: 400px;
+    }
+  }
+  .blurb {
+    width:80%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 50px;
+  }
+  .other-plan-content {
+    width: 100%;
+  }
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+.ad-block {
+  position: relative;
+
+  .diagonal-overlay {
+      width: 50%;
+      height: 50%;
+      overflow: hidden;
+  }
+  .diagonal-overlay:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 100% solid transparent;
+      border-right: 90% solid $overlay;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+.small-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  min-height:100px;
+}
+.training-plan-block-container {
+  height: 450px;
+  width: 100%;
+}
+.category-block {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 5%;
+  margin: 1em;
+}
+
+
+.ride-info-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 1em;
+  a {
+    position: absolute;
+    bottom: 10px;
+    right: 128px;
+  }
+  .diagonal-overlay {
+      width: 50%;
+      height: 0;
+      padding-top: 50px;
+      overflow: hidden;
+  }
+  .diagonal-overlay:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 240px solid transparent;
+      border-right: 300px solid $overlay;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+.riders-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1em;
+  li {
+      margin: 1em;
+    }
+
+
+}
+
+
+.news-columns {
+  width:40%;
+  min-width:300px;
+  margin:2em;
+}
+
+//Banners
+.sub-banner-container {
+  height: 80vh;
+  width:100%;
+  position: relative;
+}
+.drt-team-banner {
+  height: 100%;
+  width: 100%;
+}
+.banner-copy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:40%;
+  margin: 5%;
+  h3{
+    width: 100%;
+    margin: 30px 7%;
+    text-align:center;
+  }
+  button {
+
+  }
+}
+.training-camp-pic {
+  position: relative;
+  width: 40vw;
+  min-width:300px;
+  height: 30vh;
+  padding: 0;
+  margin:0;
+   .overlay-full {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+   }
+}
+.performance-eval-pic {
+  position: relative;
+  width: 40vw;
+  min-width:300px;
+  height: 30vh;
+  padding: 0;
+  margin:0;
+  .overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+//overlay
+  .overlay-left, .overlay-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .overlay-left {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content:center;
+  }
+  .overlay-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+//Footer
+.footer-block {
+  min-height:270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   .footer-menu {
     margin-top: 2em;
     .footer-nav {
@@ -118,13 +462,13 @@ h1, h2, h3, h4, h5 {
         flex-direction: column;
         height: 200px;
         li {
-          margin: .5em 2em;
+          padding: .5em;
         }
       }
     }
   }
   .contribution-links {
-    margin: 1em;
+    margin: .5em;
     ul {
       display: flex;
       flex-direction: column;
@@ -133,12 +477,12 @@ h1, h2, h3, h4, h5 {
         display: flex;
         flex-direction: row;
         li{
-          padding:1em;
+          padding:.5em;
         }
       }
       li {
         .author-link, .admin-link {
-          margin-top: 1em;
+          margin-top: .5em;
           display: block;
         }
       }

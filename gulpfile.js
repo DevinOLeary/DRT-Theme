@@ -58,7 +58,7 @@ gulp.task('css', ['images'], function() {
 gulp.task('js', function() {
 
   var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(concat('index.js'));
+    .pipe(concat('main.js'));
 
   if (!devBuild) {
     jsbuild = jsbuild
