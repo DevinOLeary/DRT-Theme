@@ -17,7 +17,7 @@
   </figure>
 </section>
 <!-- Team Blurb -->
-<section class="content-block">
+<section class="content-block center">
   <h2>Sharing the Stoke</h2>
   <p>Suspendisse velit lectus, tempus ut bibendum ut, luctus ut libero. Aliquam vel mi eget ante molestie tincidunt. Etiam ipsum leo, venenatis vel tempus vel, egestas eget enim. Duis maximus, nisi tincidunt feugiat fermentum, orci mauris vestibulum purus, eget vehicula metus metus et turpis </p>
   <br/>
@@ -28,13 +28,13 @@
     <aside class="center">
       <?php get_template_part('template-parts/content', 'team-info'); ?>
     </aside>
-    <article class="center">
+    <aside class="center ">
       <?php get_template_part('template-parts/content', 'featured');?>
-    </article>
+    </aside>
   </div>
 </section>
 <!-- Rider Shots -->
-<section class="content-block">
+<section class="content-block center">
   <h2>Riders</h2>
   <hr class="colored-divider"/>
   <?php get_template_part('template-parts/content', 'riders'); ?>

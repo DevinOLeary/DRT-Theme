@@ -13,16 +13,25 @@
 </section>
 <section class="content-block center">
   <div class="diagonal-overlay"></div>
-  <h2>The DRT Philosophy</h2>
-  <hr class="colored-divider"/>
-  <article class="center">
-    <aside>
-      <img src="<?php bloginfo('template_directory');?>/build/images/philosobike-rastor.png" width=290 height=110 />
-    </aside>
-    <p class="blurb">
-      Suspendisse velit lectus, tempus ut bibendum ut, luctus ut libero. Aliquam vel mi eget ante molestie tincidunt. Etiam ipsum leo, venenatis vel tempus vel, egestas eget enim. Duis maximus, nisi tincidunt feugiat fermentum, orci mauris vestibulum purus, eget vehicula metus metus et turpis
-    </p>
-  </article>
+    <?php
+      global $more;
+      $more = 0;
+      query_posts(array('category_name' => 'home-page-blurb'));
+      if(have_posts()) : while(have_posts()) : the_post();?>
+      <h2><?php the_title(); ?></h2>
+      <hr class="colored-divider"/>
+      <br/>
+      <article class="center">
+        <aside>
+          <img src="<?php bloginfo('template_directory');?>/build/images/philosobike-rastor.png" width=290 height=110 />
+        </aside>
+        <br/>
+        <article class="content-text">
+          <?php the_content(); ?>
+        </article>
+      </article>
+    <?php endwhile; endif;
+      wp_reset_query();?>
 </section>
 <section class="sub-banner-container">
   <div class="overlay-right">
@@ -41,14 +50,15 @@
   <?php
     get_template_part('template-parts/content', 'featured');
   ?>
+  <br/>
   <a href="<?php echo get_permalink(41); ?>"><button class="button-cta"><h4>View All Articles</h4></button></a>
 </section>
 <hr class="section-divider"/>
 <section class="content-block center">
   <h3>Let's Speed Things Up</h3>
-  <br/><br/>
+  <br/>
+  <br/>
   <a href="<?php echo get_permalink(48); ?>"><button class="button-cta"><h4>Start Planning</h4></button></a>
 </section>
-
 
 <?php get_footer(); ?>

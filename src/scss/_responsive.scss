@@ -14,7 +14,7 @@
   h4{
     font-size: $desktop-cta-text;
   }
-  p{
+  p, li{
     font-size: $desktop-read;
   }
   //Nav
@@ -34,6 +34,14 @@
   }
   .footer-block {
     flex-direction: row;
+    .footer-menu {
+      width:30%;
+      .footer-nav {
+        ul {
+          flex-direction: column;
+        }
+      }
+    }
   }
 
   //Content blocks

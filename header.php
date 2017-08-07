@@ -3,7 +3,6 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     <?php wp_head(); ?>
   </head>
 
@@ -24,7 +23,7 @@
       <div class='menu-icon' id='hamburger'>
         <h4>Menu</h4>
       </div>
-      <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu center" id="mobileMenu">
         <a href="<?php echo get_permalink(27); ?>"><h1 id="title">DRT</h1></a>
         <aside class="exit" id="exit"><span>X<span></aside>
         <?php wp_nav_menu(array('theme_location' => 'mobile')); ?>

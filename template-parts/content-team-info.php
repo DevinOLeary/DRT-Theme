@@ -4,7 +4,7 @@
       <?php
         global $more;
         $more = 0;
-        query_posts('cat=8');
+        query_posts('');
         if(have_posts()) : while(have_posts()) : the_post();?>
         <h3><?php the_title(); ?></h3>
         <hr class="colored-divider"/>
@@ -19,7 +19,7 @@
     <?php
       global $more;
       $more = 0;
-      query_posts('cat=10');
+      query_posts('');
       if(have_posts()) : while(have_posts()) : the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>

@@ -14,8 +14,12 @@ $sticky = get_option( 'sticky_posts' );
         <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
         <hr class="colored-divider"/>
         <br/>
-        <?php the_post_thumbnail($size = 'featured-thumb'); ?>
-        <?php the_content(); ?>
+        <?php if (has_post_thumbnail()) {
+          the_post_thumbnail($size = 'featured-thumb');
+        } ?>
+        <article class="content-text">
+          <?php the_content(); ?>
+        </article>
       <?php
   }
 }

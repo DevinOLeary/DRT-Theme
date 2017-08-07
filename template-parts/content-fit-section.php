@@ -1,7 +1,7 @@
 <?php
   global $more;
   $more = 0;
-  query_posts('cat=15');
+  query_posts('category_name' = '15');
   if(have_posts()) : while(have_posts()) : the_post();?>
     <div>
       <header class="category-block fit-header">
@@ -9,10 +9,9 @@
       </header>
       <article class="center fit-content">
         <figure class="close">X</figure>
-        <p>
+        <article class="content-text">
           <?php the_content(); ?>
-        </p>
-
+        </article>
       </article>
     </div>
 <?php endwhile; endif;

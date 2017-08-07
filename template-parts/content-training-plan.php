@@ -3,7 +3,7 @@
     <?php
     global $more;
     $more = 0;
-    query_posts('cat=18');
+    query_posts(array('category_name' => 'small-ring'));
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>
@@ -14,7 +14,7 @@
     <?php
     global $more;
     $more = 0;
-    query_posts('cat=19');
+    query_posts(array('category_name' => 'middle-ring'));
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>
@@ -25,7 +25,7 @@
     <?php
     global $more;
     $more = 0;
-    query_posts('cat=20');
+    query_posts(array('category_name' => 'large-ring'));
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>

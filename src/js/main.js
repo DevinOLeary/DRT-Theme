@@ -37,20 +37,20 @@ function mobileViewUpdate() {
 $(window).ready(mobileViewUpdate);
 $(window).resize(mobileViewUpdate);
 
+//on hamburger click, menu opens
+$(function() {
+ $('#mobileMenu').hide();
+ $("#hamburger, #scrollHamburger").on('click', function() {
+   $("#mobileMenu").slideDown(300);
+ });
+});
+//on exit click, menu closes
+$(function() {
+ $("#exit").on('click', function() {
+   $("#mobileMenu").slideUp(300);
+ });
+});
 
- //on hamburger click, menu opens
-$(function() {
-  $('#mobileMenu').hide();
-  $("#hamburger, #scrollHamburger").on('click', function() {
-    $("#mobileMenu").slideDown(300);
-  });
-});
- //on exit click, menu closes
-$(function() {
-  $("#exit").on('click', function() {
-    $("#mobileMenu").slideUp(300);
-  });
-});
 
 // Packages pane
 $(function() {

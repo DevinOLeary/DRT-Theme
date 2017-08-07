@@ -8,17 +8,14 @@
   <ul>
     <li class="step-list-container">
       <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
-      <br/>
       <p>Read through the packages and find one that sounds right for you.</p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon"><h4 class="show-font">Step <br/>2</h4></div></figure>
-      <br/>
       <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist.</p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon"><h4 class="show-font">Step <br/>3</h4></div></figure>
-      <br/>
       <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist.</p>
     </li>
   </ul>
@@ -28,22 +25,21 @@
   <h2 id="trainingPackages">Training Packages</h2>
   <hr class="colored-divider"/>
   <ul class="row-content">
-    <a href="#planContent" id="planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>
+    <a href="#planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>
     <a href="#planContent" class="anchor-link"><li class="middle-ring"><h3>Middle Ring</h3></li></a>
     <a href="#planContent" class="anchor-link"><li class="large-ring"><h3>Large Ring</h3></li></a>
   </ul>
   <!-- Package content box -->
-  <div class="training-plan-block-container">
+  <div id="planContent" class="training-plan-block-container">
     <?php get_template_part('template-parts/content', 'training-plan'); ?>
   </div>
   <!-- No Chain Block -->
-  <article class="content-block ad-block">
-    <div class="diagonal-overlay"></div>
+  <article class="content-block ad-block center">
     <?php get_template_part('template-parts/content', 'no-chain'); ?>
   </article>
 </section>
 <!-- Secondary Services -->
-<section class="content-block">
+<section class="content-block center">
   <h2>Some Other Ideas</h2>
   <hr class="colored-divider"/>
   <br/>

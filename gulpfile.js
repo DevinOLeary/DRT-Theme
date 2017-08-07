@@ -69,6 +69,8 @@ gulp.task('js', function() {
   return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
 
 });
+
+//Image Processing
 gulp.task('images', function() {
   var out = folder.build + 'images/';
   return gulp.src(folder.src + 'images/**/*')

@@ -13,7 +13,9 @@
         <h4><?php the_title(); ?></h4>
         <h5><?php the_date(); ?></h5>
         <hr class="colored-divider"/>
-        <?php the_content(); ?>
+        <article class="content-text">
+          <?php the_content(); ?>
+        </article>
       </li>
     </ul>
       <?php endwhile; endif;

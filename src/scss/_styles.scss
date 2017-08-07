@@ -5,7 +5,7 @@
   h1, h2, h3 {
     font-family: $show-font;
   }
-  h4, h5, p {
+  h4, h5, p, li {
     font-family: $read-font;
   }
   h1{
@@ -20,7 +20,7 @@
   h4{
     font-size: $mobile-cta-text;
   }
-  p{
+  p, li {
     font-size: $mobile-read;
   }
   a {
@@ -165,6 +165,7 @@
       color: inherit;
     }
   }
+
   .category-block {
     background-color: $background-dark;
     color: $text-inverse;
@@ -172,6 +173,7 @@
       color: inherit;
     }
   }
+
   .training-plan-block {
     p {
       margin: 0;
@@ -192,16 +194,19 @@
     background: $overlay-dark-right;
     background-size: cover;
   }
+
   .overlay-left {
     background: $overlay-dark-left;
     background-size:cover;
     color: $text-inverse;
   }
+
   .overlay-full {
     background: $overlay-dark-full;
     background-size:cover;
     color: $text-inverse;
   }
+
   // Footer
   .footer-block {
     background-color: $DRT-red;
