@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 3%;
+  padding: 3% 0;
   width: 100%;
   aside {
     max-width: 400px;
@@ -350,11 +350,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.news-columns {
-  width:40%;
-  min-width:300px;
-  margin:2em;
-}
+
 
 //Banners
 .sub-banner-container {
@@ -418,6 +414,18 @@ h1, h2, h3, h4, h5 {
 .fit-header {
   width: 100%;
   padding: 16px;
+}
+
+.article {
+  width: 40%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4{
+    margin-bottom: 10px;
+  }
 }
 //overlay
   .overlay-left, .overlay-right{

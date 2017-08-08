@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5 {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 3%;
+  padding: 3% 0;
   width: 100%; }
   .row-content aside {
     max-width: 400px; }
@@ -386,11 +386,6 @@ h1, h2, h3, h4, h5 {
   .riders-grid li {
     margin: 1em; }
 
-.news-columns {
-  width: 40%;
-  min-width: 300px;
-  margin: 2em; }
-
 .sub-banner-container {
   height: 80vh;
   width: 100%;
@@ -454,6 +449,25 @@ h1, h2, h3, h4, h5 {
 .fit-header {
   width: 100%;
   padding: 16px; }
+
+.article {
+  width: 40%;
+  min-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .article h4 {
+    margin-bottom: 10px; }
 
 .overlay-left, .overlay-right {
   position: absolute;

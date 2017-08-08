@@ -31,7 +31,6 @@ function DRT_features() {
   add_theme_support('menus');
   register_nav_menu('main', 'Header Menu');
   register_nav_menu('mobile', 'Mobile Menu');
-  register_nav_menu('lower', 'Below the Fold Menu');
   register_nav_menu('footer', 'Footer Menu');
   //add featured image
   add_theme_support('post-thumbnails');

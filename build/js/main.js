@@ -107,6 +107,22 @@ $(function() {
     $("#performanceEvalContent").fadeIn(400);
   });
 });
+
+//article list
+$(function() {
+  $(".article-list-container").hide();
+  $("#firstCategory").on('click', function() {
+    $(".article-list").hide();
+    $("#firstArticles").fadeIn(700);
+    $(".article-list-container").slideDown(500);
+  });
+  $("#secondCategory").on('click', function() {
+    $(".article-list").hide();
+    $("#secondArticles").fadeIn(700);
+    $(".article-list-container").slideDown(500);
+  });
+});
+
 // smooth scrolling
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
