@@ -84,10 +84,10 @@ $(function() {
   $(".fit-content").hide();
   $(".fit-header").on('click', function() {
     $(".fit-content").hide();
-    $(this).next(".fit-content").fadeIn(500);
+    $(this).next(".fit-content").fadeIn(700);
   });
   $(".close").on('click', function() {
-    $(".fit-content").slideUp(500);
+    $(".fit-content").fadeOut(400);
   });
 });
 

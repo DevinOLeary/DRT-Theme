@@ -158,7 +158,7 @@
     background-size: cover;
   }
 
-  .ad-block {
+  .ad-block, .category-block {
     background-color: $background-dark;
     color: $text-inverse;
     p,a {
@@ -166,12 +166,16 @@
     }
   }
 
-  .category-block {
+  .fit-header{
     background-color: $background-dark;
     color: $text-inverse;
+    border:1px solid $DRT-red;
     p,a {
       color: inherit;
     }
+  }
+  .fit-header:hover{
+    cursor:pointer;
   }
 
   .training-plan-block {

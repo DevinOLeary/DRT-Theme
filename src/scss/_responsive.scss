@@ -24,10 +24,11 @@
       ul{
         li {
           font-size: $desktop-read;
-          padding: .5em 2em;
+          padding: 16px;
         }
         li:last-child {
           max-height: 25px;
+          padding: 16px 36px;
         }
       }
     }
@@ -66,6 +67,7 @@
 
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
+    width: 50vw;
   }
 
 

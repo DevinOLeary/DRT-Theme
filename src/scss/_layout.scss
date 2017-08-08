@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5 {
   //   max-width: 600px;
   // }
 }
+.right {
+  float: right;
+}
 .row-content {
   display: flex;
   flex-direction: row;
@@ -230,16 +233,7 @@ h1, h2, h3, h4, h5 {
   //   min-width: 300px;
   //   margin:0;
   // }
-  .content-text {
-    margin: 2em 0;
-    width:80%;
-    max-width: 900px;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   .diagonal-overlay {
       width: 50%;
       height: 0;
@@ -272,6 +266,16 @@ h1, h2, h3, h4, h5 {
     width: 100%;
   }
 }
+.content-text {
+  margin: 2em 0;
+  width:80%;
+  max-width: 900px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .bullet-list {
   list-style-type: disc;
@@ -279,24 +283,8 @@ h1, h2, h3, h4, h5 {
 
 .ad-block {
   position: relative;
-  width: 80%;
-
-  .diagonal-overlay {
-      width: 50%;
-      height: 50%;
-      overflow: hidden;
-  }
-  .diagonal-overlay:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: 100% solid transparent;
-      border-right: 90% solid $overlay;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-  }
+  width: 100%;
+  margin-top: 50px;
 }
 .small-block {
   display: flex;
@@ -396,7 +384,7 @@ h1, h2, h3, h4, h5 {
 }
 .training-camp-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width:300px;
   height: 30vh;
   padding: 0;
@@ -412,7 +400,7 @@ h1, h2, h3, h4, h5 {
 }
 .performance-eval-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width:300px;
   height: 30vh;
   padding: 0;
@@ -425,6 +413,11 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     z-index: 2;
   }
+}
+
+.fit-header {
+  width: 100%;
+  padding: 16px;
 }
 //overlay
   .overlay-left, .overlay-right{
@@ -460,6 +453,7 @@ h1, h2, h3, h4, h5 {
   .footer-menu {
     margin-top: 2em;
     width:50%;
+
     .footer-nav {
       ul {
         display: flex;
@@ -467,7 +461,7 @@ h1, h2, h3, h4, h5 {
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
-        height: 200px;
+        height: 180px;
       }
     }
   }

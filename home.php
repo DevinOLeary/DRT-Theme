@@ -11,9 +11,9 @@
 <!-- Articles -->
 <section class="row-content">
   <div class="category-block  center">
-    <h3><?php the_category(12); ?></h3>
+    <h3><?php the_category(15); ?></h3>
     <hr class="colored-divider"/>
-    <?php echo category_description(12); ?>
+    <?php echo category_description(16); ?>
     <button class="sub-button"><h4>View Articles</h4></button>
   </div>
   <div class="category-block  center">

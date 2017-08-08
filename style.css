@@ -38,6 +38,9 @@ h1, h2, h3, h4, h5 {
           align-items: center;
   width: 100%; }
 
+.right {
+  float: right; }
+
 .row-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,24 +250,6 @@ h1, h2, h3, h4, h5 {
   display: -ms-flexbox;
   display: flex;
   min-height: 400px; }
-  .content-block .content-text {
-    margin: 2em 0;
-    width: 80%;
-    max-width: 900px;
-    min-width: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   .content-block .diagonal-overlay {
     width: 50%;
     height: 0;
@@ -301,26 +286,32 @@ h1, h2, h3, h4, h5 {
   .content-block .other-plan-content {
     width: 100%; }
 
+.content-text {
+  margin: 2em 0;
+  width: 80%;
+  max-width: 900px;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .bullet-list {
   list-style-type: disc; }
 
 .ad-block {
   position: relative;
-  width: 80%; }
-  .ad-block .diagonal-overlay {
-    width: 50%;
-    height: 50%;
-    overflow: hidden; }
-  .ad-block .diagonal-overlay:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 100% solid transparent;
-    border-right: 90% solid rgba(155, 155, 155, 0.1);
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+  width: 100%;
+  margin-top: 50px; }
 
 .small-block {
   display: -webkit-box;
@@ -432,7 +423,7 @@ h1, h2, h3, h4, h5 {
 
 .training-camp-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width: 300px;
   height: 30vh;
   padding: 0;
@@ -447,7 +438,7 @@ h1, h2, h3, h4, h5 {
 
 .performance-eval-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width: 300px;
   height: 30vh;
   padding: 0;
@@ -459,6 +450,10 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     height: 100%;
     z-index: 2; }
+
+.fit-header {
+  width: 100%;
+  padding: 16px; }
 
 .overlay-left, .overlay-right {
   position: absolute;
@@ -532,7 +527,7 @@ h1, h2, h3, h4, h5 {
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch;
-      height: 200px; }
+      height: 180px; }
   .footer-block .contribution-links {
     margin: .5em; }
     .footer-block .contribution-links ul {
@@ -685,17 +680,21 @@ a:focus, button:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.ad-block {
+.ad-block, .category-block {
   background-color: rgba(0, 0, 0, 0.8);
   color: white; }
-  .ad-block p, .ad-block a {
+  .ad-block p, .ad-block a, .category-block p, .category-block a {
     color: inherit; }
 
-.category-block {
+.fit-header {
   background-color: rgba(0, 0, 0, 0.8);
-  color: white; }
-  .category-block p, .category-block a {
+  color: white;
+  border: 1px solid #EF504F; }
+  .fit-header p, .fit-header a {
     color: inherit; }
+
+.fit-header:hover {
+  cursor: pointer; }
 
 .training-plan-block p {
   margin: 0; }
@@ -890,9 +889,10 @@ a, a:hover, a:focus, a:visited {
     font-size: 20px; }
   .site-header .site-nav ul li {
     font-size: 20px;
-    padding: .5em 2em; }
+    padding: 16px; }
   .site-header .site-nav ul li:last-child {
-    max-height: 25px; }
+    max-height: 25px;
+    padding: 16px 36px; }
   .footer-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -920,4 +920,5 @@ a, a:hover, a:focus, a:visited {
     width: 270px;
     height: 270px; }
   .training-camp-pic, .performance-eval-pic {
-    height: 50vh; } }
+    height: 50vh;
+    width: 50vw; } }

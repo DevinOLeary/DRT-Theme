@@ -65,10 +65,18 @@
 <hr class="section-divider"/>
 <!-- Plan Contact -->
 <section class="content-block center">
-  <h3>Get Started on a Plan with Don</h3>
-  <br/>
-  <p>Kickstarter pork belly tumeric, retro kitsch crucifix chia vexillologist. Hammock trust fund small batch beard occupy. Blue bottle mustache quinoa raw denim heirloom brunch offal bicycle rights paleo 90’s PBR&B forage cray cronut.</p>
-  <br/>
+  <?php
+    global $more;
+    $more = 0;
+    query_posts(array('category_name' => 'training-plan-cta'));
+    if(have_posts()) : while(have_posts()) : the_post();?>
+      <h3><?php the_title(); ?></h3>
+      <article class="content-text">
+        <?php the_content(); ?>
+      </article>
+  <?php endwhile; endif;
+    wp_reset_query();
+  ?>
   <a href="<?php echo get_permalink(44);?>"><button class="button-cta"><h4>Let's Talk</h4></button></a>
 </section>
 <?php get_footer(); ?>
