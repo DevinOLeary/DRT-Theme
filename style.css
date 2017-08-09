@@ -382,6 +382,20 @@ h1, h2, h3, h4, h5 {
   .riders-grid li {
     margin: 1em; }
 
+.field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
+.pikaday__display, .field-wrap > div input, .field-wrap select,
+.field-wrap textarea {
+  height: 50px;
+  text-align: center; }
+
+.nf-field-element, .field-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .sub-banner-container {
   height: 80vh;
   width: 100%;
@@ -716,6 +730,17 @@ a:focus, button:focus {
     color: inherit;
     text-decoration: underline; }
 
+.field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
+.pikaday__display, .field-wrap > div input, .field-wrap select,
+.field-wrap textarea
+.ninja-forms-form-wrap, .ninja-forms-field {
+  font-size: 36px;
+  font-family: "Rajdhani", sans-serif; }
+
+label {
+  font-size: 36px;
+  font-family: "Rajdhani", sans-serif; }
+
 .overlay-right {
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(transparent));
   background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
@@ -863,6 +888,17 @@ a:focus, button:focus {
   border: none;
   color: white;
   min-width: 150px; }
+
+.button-submit {
+  padding: 20px;
+  background-color: #EF504F;
+  border: none;
+  color: white;
+  min-width: 150px;
+  font-size: 20px; }
+
+.button-submit:hover {
+  cursor: pointer; }
 
 .sub-button {
   padding: 20px;

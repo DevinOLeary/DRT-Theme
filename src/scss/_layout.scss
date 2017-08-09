@@ -340,9 +340,19 @@ h1, h2, h3, h4, h5 {
   li {
       margin: 1em;
     }
-
-
 }
+
+.field-wrap .listselect-wrap>div, .field-wrap .pikaday__container, .field-wrap
+ .pikaday__display, .field-wrap>div input, .field-wrap select,
+ .field-wrap textarea {
+   height: 50px;
+   text-align: center;
+ }
+ 
+ .nf-field-element, .field-wrap {
+   display: flex;
+   justify-content: center;
+ }
 
 
 

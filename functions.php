@@ -11,8 +11,6 @@ add_action('wp_enqueue_scripts', 'DRT_resources');
 
 function theme_features() {
   if (function_exists('add_theme_support')) {
-    //add featured image
-    add_theme_support('post-thumbnails');
   //theme logo
   add_theme_support( 'custom-logo', array(
     'flex-height' => true,
@@ -30,6 +28,9 @@ add_action('after_setup_theme', 'theme_features');
 
 
 function DRT_features() {
+  if (function_exists('add_theme_support')) {
+    //add featured image
+    add_theme_support('post-thumbnails');
   //add menus
   add_theme_support('menus');
   register_nav_menu('main', 'Header Menu');
@@ -38,6 +39,7 @@ function DRT_features() {
   //post-formats to post-type page
   add_post_type_support( 'page', 'post-formats' );
   register_taxonomy_for_object_type( 'post_format', 'page' );
+  }
 }
 add_action('init', 'DRT_features');
 

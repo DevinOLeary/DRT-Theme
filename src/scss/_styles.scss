@@ -193,6 +193,20 @@
     }
   }
 
+  .field-wrap .listselect-wrap>div, .field-wrap .pikaday__container, .field-wrap
+   .pikaday__display, .field-wrap>div input, .field-wrap select,
+   .field-wrap textarea
+  .ninja-forms-form-wrap, .ninja-forms-field {
+    font-size: $desktop-subtitle;
+    font-family: $show-font;
+  }
+    label {
+      font-size: $desktop-subtitle;
+      font-family: $show-font;
+    }
+
+
+
 
   //overlay
   .overlay-right{
