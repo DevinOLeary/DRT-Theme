@@ -7,7 +7,9 @@
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>
-      <?php the_content(); ?>
+      <article class="content-text">
+        <?php the_content(); ?>
+      </article>  
     <?php endwhile; endif; wp_reset_query();?>
   </article>
   <article class="training-plan-block center" id="medium-plan">
@@ -18,7 +20,9 @@
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>
-      <?php the_content(); ?>
+      <article class="content-text">
+        <?php the_content(); ?>
+      </article>  
     <?php endwhile; endif; wp_reset_query();?>
   </article>
   <article class="training-plan-block center" id="large-plan">
@@ -29,6 +33,8 @@
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>
-      <?php the_content(); ?>
+      <article class="content-text">
+        <?php the_content(); ?>
+      </article>  
     <?php endwhile; endif; wp_reset_query();?>
   </article>

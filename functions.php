@@ -10,6 +10,9 @@ function DRT_resources() {
 add_action('wp_enqueue_scripts', 'DRT_resources');
 
 function theme_features() {
+  if (function_exists('add_theme_support')) {
+    //add featured image
+    add_theme_support('post-thumbnails');
   //theme logo
   add_theme_support( 'custom-logo', array(
     'flex-height' => true,
@@ -20,7 +23,7 @@ function theme_features() {
   add_image_size( 'logo', $width = 56, $height = 145, $crop = false );
   //post formats
   add_theme_support( 'post-formats', array( 'aside', 'image' ) );
-
+  }
 }
 
 add_action('after_setup_theme', 'theme_features');
@@ -32,9 +35,6 @@ function DRT_features() {
   register_nav_menu('main', 'Header Menu');
   register_nav_menu('mobile', 'Mobile Menu');
   register_nav_menu('footer', 'Footer Menu');
-  //add featured image
-  add_theme_support('post-thumbnails');
-  set_post_thumbnail_size( 300, 300, true);
   //post-formats to post-type page
   add_post_type_support( 'page', 'post-formats' );
   register_taxonomy_for_object_type( 'post_format', 'page' );

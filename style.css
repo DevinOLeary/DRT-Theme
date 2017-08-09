@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5 {
 .content-text {
   margin: 2em 0;
   width: 80%;
-  max-width: 900px;
+  max-width: 650px;
   min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,10 +346,6 @@ h1, h2, h3, h4, h5 {
   width: 320px;
   height: 320px;
   margin: 1em; }
-  .ride-info-container a {
-    position: absolute;
-    bottom: 10px;
-    right: 128px; }
   .ride-info-container .diagonal-overlay {
     width: 50%;
     height: 0;
@@ -717,7 +713,8 @@ a:focus, button:focus {
   background-color: rgba(0, 0, 0, 0.8);
   color: white; }
   .ride-info-container a {
-    color: inherit; }
+    color: inherit;
+    text-decoration: underline; }
 
 .overlay-right {
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(transparent));

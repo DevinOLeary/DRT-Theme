@@ -33,6 +33,7 @@
   <div id="planContent" class="training-plan-block-container">
     <?php get_template_part('template-parts/content', 'training-plan'); ?>
   </div>
+  <br/>
   <!-- No Chain Block -->
   <article class="content-block ad-block center">
     <?php get_template_part('template-parts/content', 'no-chain'); ?>
@@ -77,6 +78,6 @@
   <?php endwhile; endif;
     wp_reset_query();
   ?>
-  <a href="<?php echo get_permalink(44);?>"><button class="button-cta"><h4>Let's Talk</h4></button></a>
+  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4>Let's Talk</h4></button></a>
 </section>
 <?php get_footer(); ?>
