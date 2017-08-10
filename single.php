@@ -10,8 +10,7 @@
 <section class="content-block">
   <article class="row-content">
     <aside>
-      <?php if ( has_post_thumbnail() ) {
-       the_post_thumbnail('medium', true);}?>
+      
     </aside>
     <aside class="center">
       <p><?php the_content(); ?></p>

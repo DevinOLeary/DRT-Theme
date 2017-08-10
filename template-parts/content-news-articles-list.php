@@ -13,6 +13,7 @@
         <h5><?php echo get_the_date(); ?></h5>
         <hr class="colored-divider"/>
         <article class="content-text">
+          <?php the_post_thumbnail(); ?>
           <?php the_content(); ?>
         </article>
       </div>
@@ -35,10 +36,8 @@
         <h4><?php the_title(); ?></h4>
         <h5><?php echo get_the_date(); ?></h5>
         <hr class="colored-divider"/>
-        <?php if(has_post_thumbnail()){
-          the_post_thumbnail('small');
-        }?>
         <article class="content-text">
+          <?php the_post_thumbnail(); ?>
           <?php the_content(); ?>
         </article>
       </div>

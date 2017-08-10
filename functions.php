@@ -11,16 +11,14 @@ add_action('wp_enqueue_scripts', 'DRT_resources');
 
 function theme_features() {
   if (function_exists('add_theme_support')) {
+  //add featured image
+  add_theme_support('post-thumbnails');
   //theme logo
   add_theme_support( 'custom-logo', array(
     'flex-height' => true,
     'flex-width'  => true,
     'header-text' => array('site-logo'),
   ) );
-  //image sizes
-  add_image_size( 'logo', $width = 56, $height = 145, $crop = false );
-  //post formats
-  add_theme_support( 'post-formats', array( 'aside', 'image' ) );
   }
 }
 
@@ -29,8 +27,6 @@ add_action('after_setup_theme', 'theme_features');
 
 function DRT_features() {
   if (function_exists('add_theme_support')) {
-    //add featured image
-    add_theme_support('post-thumbnails');
   //add menus
   add_theme_support('menus');
   register_nav_menu('main', 'Header Menu');
@@ -49,13 +45,6 @@ add_action('init', 'DRT_features');
 add_theme_support('title-tag');
 
 
-// Filters
-function wpb_autolink_featured_images( $html, $post_id, $post_image_id, $overlay ) {
-
-$html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
-return $html;
-}
-add_filter( 'post_thumbnail_html', 'wpb_autolink_featured_images', 10, 3 );
 
 function remove_more_link_scroll( $link ) {
 	$link = preg_replace( '|#more-[0-9]+|', '', $link );

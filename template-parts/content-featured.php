@@ -12,12 +12,12 @@ $sticky = get_option( 'sticky_posts' );
       $query->the_post();
       ?>
         <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+        <h5><?php echo get_the_date(); ?></h5>
         <hr class="colored-divider"/>
-        <br/>
-        <?php if (has_post_thumbnail()) {
-          the_post_thumbnail($size = 'featured-thumb');
-        } ?>
         <article class="content-text">
+          <?php if(has_post_thumbnail()) {
+            the_post_thumbnail();
+          }?>
           <?php the_content(); ?>
         </article>
       <?php
