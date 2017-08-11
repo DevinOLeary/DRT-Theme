@@ -11,20 +11,20 @@
 <!-- Goal Block -->
 <section class="content-block center">
   <div class="center hide below-fold-blurb">
-  <?php
-  global $more;
-  $more = 0;
-  query_posts(array('category_name' => 'bike-fit-blurb'));
-  if(have_posts()): while(have_posts()): the_post();?>
-    <h3><?php the_title(); ?></h3>
-    <hr class="colored-divider"/>
-    <article class="content-text">
-      <?php the_content(); ?>
-    </article>
-  <?php endwhile; endif; wp_reset_query();?>
+    <?php
+    global $more;
+    $more = 0;
+    query_posts(array('category_name' => 'bike-fit-blurb'));
+    if(have_posts()): while(have_posts()): the_post();?>
+      <h3><?php the_title(); ?></h3>
+      <hr class="colored-divider"/>
+      <article class="content-text">
+        <?php the_content(); ?>
+      </article>
+    <?php endwhile; endif; wp_reset_query();?>
+    <br/>
+    <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
   </div>
-  <br/>
-  <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
 </section>
 <!-- Fit Options Block -->
 <section class="center">

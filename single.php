@@ -8,15 +8,15 @@
   <hr class="colored-divider"/>
 </section>
 <section class="content-block center">
-  <hgroup class="center">
-    <h4><?php echo get_the_date(); ?></h4>
+    <hgroup class="center">
+      <h4><?php echo get_the_date(); ?></h4>
+      <br/>
+      <h4>Words by <?php the_author(); ?></h4>
+    </hgroup>
     <br/>
-    <h4>Words by <?php the_author(); ?></h4>
-  </hgroup>
-  <br/>
-  <br/>
-  <hr class="section-divider"/>
-  <br/>
+    <br/>
+    <hr class="section-divider"/>
+    <br/>
   <article>
     <aside class="article-image right">
       <?php if(has_post_thumbnail()) {
@@ -28,6 +28,8 @@
     </aside>
   </article>
 </section>
+
+
   <!-- End Content -->
   <?php endwhile; endif;?>
 

@@ -14,7 +14,7 @@
           <h5><?php echo get_the_date(); ?></h5>
           <hr class="colored-divider"/>
           <article class="content-text">
-            <?php the_post_thumbnail(); ?>
+            <a href="<?php echo esc_url( get_permalink()); ?>"><?php the_post_thumbnail(); ?></a>
             <?php the_content(); ?>
           </article>
         </div>
