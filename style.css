@@ -4,7 +4,8 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 aside, p {
   display: block; }
@@ -15,7 +16,7 @@ section {
 figure {
   margin: 0; }
 
-p {
+p, li {
   line-height: 30px; }
 
 h1, h2, h3, h4, h5 {
@@ -34,7 +35,11 @@ h1, h2, h3, h4, h5 {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 100%; }
+
+.right {
+  float: right; }
 
 .row-content {
   display: -webkit-box;
@@ -52,7 +57,10 @@ h1, h2, h3, h4, h5 {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 3%; }
+  padding: 3% 0;
+  width: 100%; }
+  .row-content aside {
+    max-width: 400px; }
 
 .text-centered {
   text-align: center; }
@@ -74,6 +82,9 @@ h1, h2, h3, h4, h5 {
 .hide {
   display: none; }
 
+.show {
+  display: block; }
+
 .insta-logo {
   padding-left: .5em; }
 
@@ -81,17 +92,18 @@ h1, h2, h3, h4, h5 {
   height: 100px; }
   .site-header .custom-logo-link img {
     display: inline-block;
-    margin: 20px;
+    margin: 0px;
     position: absolute;
     top: 0px;
-    left: 20px;
+    left: 10px;
     z-index: 100; }
 
 .menu-icon {
   position: absolute;
   right: 20px;
   top: 40px;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
 
 .scroll-menu-icon {
   position: absolute;
@@ -106,21 +118,9 @@ h1, h2, h3, h4, h5 {
   left: 0;
   height: 100%;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  display: none; }
   .mobile-menu h1 {
-    margin-bottom: 50px; }
+    margin: 50px; }
   .mobile-menu .menu {
     width: 100%; }
     .mobile-menu .menu ul {
@@ -150,24 +150,26 @@ h1, h2, h3, h4, h5 {
   top: 20px;
   right: 20px; }
 
-.site-nav ul {
-  width: 72%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  float: right;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
-  margin-right: 20px; }
-  .site-nav ul li {
-    padding: .5em .5em;
-    z-index: 100; }
+.site-nav {
+  display: none; }
+  .site-nav ul {
+    width: 72%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    float: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 20px; }
+    .site-nav ul li {
+      padding: .5em .5em;
+      z-index: 100; }
 
 .indented-title {
   text-indent: -999999999px;
@@ -184,7 +186,8 @@ h1, h2, h3, h4, h5 {
   width: 100vw;
   position: absolute;
   top: -30%;
-  right: 0; }
+  right: 0;
+  z-index: 50; }
 
 .child-a-space-banner {
   height: 100%;
@@ -249,26 +252,12 @@ h1, h2, h3, h4, h5 {
 
 .content-block {
   position: relative;
+  padding: 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4%;
-  min-height: 300px;
-  width: 100%; }
-  .content-block p {
-    width: 60%;
-    min-width: 300px;
-    margin: 0; }
+  min-height: 400px;
+  z-index: 0; }
   .content-block .diagonal-overlay {
     width: 50%;
     height: 0;
@@ -302,33 +291,38 @@ h1, h2, h3, h4, h5 {
     .content-block .one-column-content p {
       width: 60%;
       min-width: 400px; }
-  .content-block .blurb {
-    width: 80%;
-    max-width: 600px;
-    min-width: 300px;
-    margin: 50px; }
   .content-block .other-plan-content {
     width: 100%; }
+
+.content-text {
+  margin: 2em 0;
+  width: 80%;
+  max-width: 650px;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.wrap-text {
+  padding: 0 10%; }
 
 .bullet-list {
   list-style-type: disc; }
 
 .ad-block {
-  position: relative; }
-  .ad-block .diagonal-overlay {
-    width: 50%;
-    height: 50%;
-    overflow: hidden; }
-  .ad-block .diagonal-overlay:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 100% solid transparent;
-    border-right: 90% solid rgba(155, 155, 155, 0.1);
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+  position: relative;
+  width: 100%;
+  margin-top: 50px; }
 
 .small-block {
   display: -webkit-box;
@@ -363,10 +357,6 @@ h1, h2, h3, h4, h5 {
   width: 320px;
   height: 320px;
   margin: 1em; }
-  .ride-info-container a {
-    position: absolute;
-    bottom: 10px;
-    right: 128px; }
   .ride-info-container .diagonal-overlay {
     width: 50%;
     height: 0;
@@ -403,10 +393,18 @@ h1, h2, h3, h4, h5 {
   .riders-grid li {
     margin: 1em; }
 
-.news-columns {
-  width: 40%;
-  min-width: 300px;
-  margin: 2em; }
+.field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
+.pikaday__display, .field-wrap > div input, .field-wrap select,
+.field-wrap textarea {
+  height: 50px; }
+
+.nf-field-element, .field-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left; }
 
 .sub-banner-container {
   height: 80vh;
@@ -440,7 +438,7 @@ h1, h2, h3, h4, h5 {
 
 .training-camp-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width: 300px;
   height: 30vh;
   padding: 0;
@@ -455,7 +453,7 @@ h1, h2, h3, h4, h5 {
 
 .performance-eval-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width: 300px;
   height: 30vh;
   padding: 0;
@@ -467,6 +465,37 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     height: 100%;
     z-index: 2; }
+
+.fit-header {
+  width: 100%;
+  padding: 16px; }
+
+.article {
+  width: 40%;
+  min-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .article h4 {
+    margin-bottom: 10px; }
+
+.article-image {
+  width: 40%;
+  margin: 2em;
+  min-width: 300px; }
+  .article-image img {
+    width: 100%;
+    height: auto; }
 
 .overlay-left, .overlay-right {
   position: absolute;
@@ -506,6 +535,9 @@ h1, h2, h3, h4, h5 {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.pum-content p {
+  text-align: center; }
+
 .footer-block {
   min-height: 270px;
   width: 100%;
@@ -522,20 +554,25 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center; }
   .footer-block .footer-menu {
-    margin-top: 2em; }
+    margin-top: 2em;
+    width: 50%; }
     .footer-block .footer-menu .footer-nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      height: 200px; }
-      .footer-block .footer-menu .footer-nav ul li {
-        padding: .5em; }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      height: 180px; }
   .footer-block .contribution-links {
     margin: .5em; }
     .footer-block .contribution-links ul {
@@ -566,7 +603,7 @@ h1, h2, h3, h4, h5 {
 h1, h2, h3 {
   font-family: "Rajdhani", sans-serif; }
 
-h4, h5, p {
+h4, h5, p, li {
   font-family: "Lato", sans-serif; }
 
 h1 {
@@ -581,7 +618,7 @@ h3 {
 h4 {
   font-size: 18px; }
 
-p {
+p, li {
   font-size: 16px; }
 
 a {
@@ -688,17 +725,21 @@ a:focus, button:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.ad-block {
+.ad-block, .category-block {
   background-color: rgba(0, 0, 0, 0.8);
   color: white; }
-  .ad-block p, .ad-block a {
+  .ad-block p, .ad-block a, .category-block p, .category-block a {
     color: inherit; }
 
-.category-block {
+.fit-header {
   background-color: rgba(0, 0, 0, 0.8);
-  color: white; }
-  .category-block p, .category-block a {
+  color: white;
+  border: 1px solid #EF504F; }
+  .fit-header p, .fit-header a {
     color: inherit; }
+
+.fit-header:hover {
+  cursor: pointer; }
 
 .training-plan-block p {
   margin: 0; }
@@ -707,7 +748,19 @@ a:focus, button:focus {
   background-color: rgba(0, 0, 0, 0.8);
   color: white; }
   .ride-info-container a {
-    color: inherit; }
+    color: inherit;
+    text-decoration: underline; }
+
+.field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
+.pikaday__display, .field-wrap > div input, .field-wrap select,
+.field-wrap textarea
+.ninja-forms-form-wrap, .ninja-forms-field {
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif; }
+
+label {
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif; }
 
 .overlay-right {
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(transparent));
@@ -746,7 +799,7 @@ a:focus, button:focus {
   width: 79.6px;
   height: 47px;
   background-color: transparent;
-  margin: 23.09px 0;
+  margin: 23.09px 2em;
   border-left: solid 5px #EF504F;
   border-right: solid 5px #EF504F;
   display: -webkit-box;
@@ -850,12 +903,32 @@ a:focus, button:focus {
   transition: .3s;
   font-size: 24px; }
 
+.fit-content {
+  position: relative; }
+  .fit-content .close {
+    position: absolute;
+    right: 10%;
+    top: 50px; }
+  .fit-content .close:hover {
+    cursor: pointer; }
+
 .button-cta {
   padding: 20px;
   background-color: #EF504F;
   border: none;
   color: white;
   min-width: 150px; }
+
+.button-submit {
+  padding: 20px;
+  background-color: #EF504F;
+  border: none;
+  color: white;
+  min-width: 150px;
+  font-size: 20px; }
+
+.button-submit:hover {
+  cursor: pointer; }
 
 .sub-button {
   padding: 20px;
@@ -870,6 +943,14 @@ a:focus, button:focus {
 
 button:hover {
   cursor: pointer; }
+
+.delay {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
+
+.animated {
+  -webkit-animation-duration: 1.5s !important;
+          animation-duration: 1.5s !important; }
 
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
@@ -889,18 +970,26 @@ a, a:hover, a:focus, a:visited {
     font-size: 36px; }
   h4 {
     font-size: 20px; }
-  p {
+  p, li {
     font-size: 20px; }
   .site-header .site-nav ul li {
     font-size: 20px;
-    padding: .5em 2em; }
+    padding: 16px; }
   .site-header .site-nav ul li:last-child {
-    max-height: 25px; }
+    max-height: 25px;
+    padding: 16px 36px; }
   .footer-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+    .footer-block .footer-menu {
+      width: 30%; }
+      .footer-block .footer-menu .footer-nav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
   .content-block .two-column-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -916,4 +1005,5 @@ a, a:hover, a:focus, a:visited {
     width: 270px;
     height: 270px; }
   .training-camp-pic, .performance-eval-pic {
-    height: 50vh; } }
+    height: 50vh;
+    width: 50vw; } }

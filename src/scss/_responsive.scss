@@ -14,7 +14,7 @@
   h4{
     font-size: $desktop-cta-text;
   }
-  p{
+  p, li{
     font-size: $desktop-read;
   }
   //Nav
@@ -24,16 +24,25 @@
       ul{
         li {
           font-size: $desktop-read;
-          padding: .5em 2em;
+          padding: 16px;
         }
         li:last-child {
           max-height: 25px;
+          padding: 16px 36px;
         }
       }
     }
   }
   .footer-block {
     flex-direction: row;
+    .footer-menu {
+      width:30%;
+      .footer-nav {
+        ul {
+          flex-direction: column;
+        }
+      }
+    }
   }
 
   //Content blocks
@@ -58,6 +67,7 @@
 
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
+    width: 50vw;
   }
 
 

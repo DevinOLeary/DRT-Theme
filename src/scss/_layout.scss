@@ -4,6 +4,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   margin: 0;
+  position: relative;
 }
 aside, p {
   display: block;
@@ -17,7 +18,7 @@ figure {
 
 
 // text
-p {
+p, li{
   line-height: 30px;
 }
 h1, h2, h3, h4, h5 {
@@ -30,9 +31,13 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   // p {
   //   max-width: 600px;
   // }
+}
+.right {
+  float: right;
 }
 .row-content {
   display: flex;
@@ -40,7 +45,11 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 3%;
+  padding: 3% 0;
+  width: 100%;
+  aside {
+    max-width: 400px;
+  }
 }
 .text-centered {
   text-align: center;
@@ -63,6 +72,9 @@ h1, h2, h3, h4, h5 {
 .hide {
   display: none;
 }
+.show {
+  display: block;
+}
 .insta-logo {
   padding-left: .5em;
 }
@@ -75,10 +87,10 @@ h1, h2, h3, h4, h5 {
   .custom-logo-link{
     img{
       display: inline-block;
-      margin: 20px;
+      margin: 0px;
       position: absolute;
       top:0px;
-      left:20px;
+      left:10px;
       z-index:100;
     }
   }
@@ -91,7 +103,7 @@ h1, h2, h3, h4, h5 {
   right:20px;
   top:40px;
   z-index: 100;
-
+  display: none;
 }
 .scroll-menu-icon{
   position: absolute;
@@ -106,12 +118,9 @@ h1, h2, h3, h4, h5 {
   left: 0;
   height:100%;
   width:100vw;
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
+  display:none;
   h1{
-    margin-bottom:50px;
+    margin:50px;
   }
   .menu {
     width: 100%;
@@ -139,6 +148,7 @@ h1, h2, h3, h4, h5 {
 }
 //mobile end
 .site-nav {
+  display: none;
   ul {
     width:72%;
     display: flex;
@@ -171,6 +181,7 @@ h1, h2, h3, h4, h5 {
   position:absolute;
   top: -30%;
   right: 0;
+  z-index:50;
 }
 .child-a-space-banner {
   height:100%;
@@ -219,18 +230,16 @@ h1, h2, h3, h4, h5 {
 //Content Block
 .content-block {
   position: relative;
+  padding: 4% 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4%;
-  min-height:300px;
-  width: 100%;
-  p {
-    width: 60%;
-    min-width: 300px;
-    margin: 0;
-  }
+  min-height:400px;
+  z-index: 0;
+  // p {
+  //   width: 60%;
+  //   min-width: 300px;
+  //   margin:0;
+  // }
+
   .diagonal-overlay {
       width: 50%;
       height: 0;
@@ -259,15 +268,22 @@ h1, h2, h3, h4, h5 {
       min-width: 400px;
     }
   }
-  .blurb {
-    width:80%;
-    max-width: 600px;
-    min-width: 300px;
-    margin: 50px;
-  }
   .other-plan-content {
     width: 100%;
   }
+}
+.content-text {
+  margin: 2em 0;
+  width:80%;
+  max-width: 650px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-text{
+  padding: 0 10%;
 }
 
 .bullet-list {
@@ -276,23 +292,8 @@ h1, h2, h3, h4, h5 {
 
 .ad-block {
   position: relative;
-
-  .diagonal-overlay {
-      width: 50%;
-      height: 50%;
-      overflow: hidden;
-  }
-  .diagonal-overlay:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: 100% solid transparent;
-      border-right: 90% solid $overlay;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-  }
+  width: 100%;
+  margin-top: 50px;
 }
 .small-block {
   display: flex;
@@ -320,11 +321,6 @@ h1, h2, h3, h4, h5 {
   width: 320px;
   height: 320px;
   margin: 1em;
-  a {
-    position: absolute;
-    bottom: 10px;
-    right: 128px;
-  }
   .diagonal-overlay {
       width: 50%;
       height: 0;
@@ -353,16 +349,23 @@ h1, h2, h3, h4, h5 {
   li {
       margin: 1em;
     }
-
-
 }
 
+//Form Elements
 
-.news-columns {
-  width:40%;
-  min-width:300px;
-  margin:2em;
-}
+.field-wrap .listselect-wrap>div, .field-wrap .pikaday__container, .field-wrap
+ .pikaday__display, .field-wrap>div input, .field-wrap select,
+ .field-wrap textarea {
+   height: 50px;
+ }
+
+ .nf-field-element, .field-wrap {
+   display: flex;
+   justify-content: left;
+ }
+
+
+
 
 //Banners
 .sub-banner-container {
@@ -392,7 +395,7 @@ h1, h2, h3, h4, h5 {
 }
 .training-camp-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width:300px;
   height: 30vh;
   padding: 0;
@@ -408,7 +411,7 @@ h1, h2, h3, h4, h5 {
 }
 .performance-eval-pic {
   position: relative;
-  width: 40vw;
+  width: 100vw;
   min-width:300px;
   height: 30vh;
   padding: 0;
@@ -420,6 +423,34 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     height: 100%;
     z-index: 2;
+  }
+}
+
+.fit-header {
+  width: 100%;
+  padding: 16px;
+}
+
+
+.article {
+  width: 40%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4{
+    margin-bottom: 10px;
+  }
+}
+
+.article-image {
+  width: 40%;
+  margin: 2em;
+  min-width: 300px;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 //overlay
@@ -444,7 +475,9 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
   }
 
-
+.pum-content p{
+  text-align: center;
+}
 //Footer
 .footer-block {
   min-height:270px;
@@ -455,15 +488,16 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   .footer-menu {
     margin-top: 2em;
+    width:50%;
+
     .footer-nav {
       ul {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        height: 200px;
-        li {
-          padding: .5em;
-        }
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 180px;
       }
     }
   }

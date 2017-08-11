@@ -2,28 +2,32 @@
 
 <section class="above-fold-container banner">
   <!-- Articles page -->
-  <h1>Bike News</h1>
+  <h1 class="animated fadeInDown">Bike News</h1>
   <hr class="colored-divider"/>
 </section>
 <!-- Banner -->
 <section>
 </section>
 <!-- Articles -->
-<section class="row-content">
-  <div class="category-block  center">
-    <h3><?php the_category(12); ?></h3>
+<section class="row-content animated fadeInLeft delay">
+  <div class="category-block center">
+    <h3><?php echo get_cat_name(16); ?></h3>
     <hr class="colored-divider"/>
-    <?php echo category_description(12); ?>
-    <button class="sub-button"><h4>View Articles</h4></button>
+    <?php echo category_description(16); ?>
+    <a href="#articleContainer">
+      <button class="sub-button" id="firstCategory"><h4>View Articles</h4></button>
+    </a>
   </div>
-  <div class="category-block  center">
-    <h3><?php the_category(17); ?></h3>
+  <div class="category-block center">
+    <h3><?php echo get_cat_name(17); ?></h3>
     <hr class="colored-divider"/>
     <?php echo category_description(17); ?>
-    <button class="sub-button"><h4>View Articles</h4></button>
+    <a href="#articleContainer">
+      <button class="sub-button" id="secondCategory"><h4>View Articles</h4></button>
+    </a>
   </div>
 </section>
-<article>
-  <?php get_template_part('template-parts/content', 'news-columns'); ?>
-</article>
+<section class="article-list-container center" id="articleContainer">
+  <?php get_template_part('template-parts/content', 'news-articles-list'); ?>
+</section>
 <?php get_footer(); ?>

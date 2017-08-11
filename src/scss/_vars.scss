@@ -1,49 +1,50 @@
 
 // Color
-$DRT-red: #EF504F;
-$DRT-black: rgba(0,0,0,.8);
-$white: rgb(255,255,255);
-$clear-gray: rgba(155,155,155,.1);
-$clear: rgba(0,0,0,0);
-$clear-black:rgba(0,0,0,.3);
+      $DRT-red: #EF504F;
+      $DRT-black: rgba(0,0,0,.8);
+      $white: rgb(255,255,255);
+      $clear-gray: rgba(155,155,155,.1);
+      $clear: rgba(0,0,0,0);
+      $clear-black:rgba(0,0,0,.3);
+
+      //blocks
+      $background-dark: $DRT-black;
+      $background-clear: $clear;
+      $background-white: $white;
+      $background-red: $DRT-red;
+
+      //elements
+      $button-cta: $DRT-red;
+      $divider-line: $DRT-red;
+
+      //Overlays
+      $overlay-dark-right:linear-gradient(to left, $DRT-black, $clear);
+      $overlay-dark-left:linear-gradient(to right, $DRT-black, $clear);
+      $overlay-white: linear-gradient(to top, white, $clear);
+      $overlay-dark-full: $clear-black;
+      $overlay: $clear-gray;
 
 
+      // text
+      $text-inverse: $white;
+      $text-colored: $DRT-black;
+
+// Sizing
+      //desktop
+      $desktop-read: 20px;
+      $desktop-cta-text: 20px;
+      $desktop-subtitle: 36px;
+      $desktop-section-title: 48px;
+      $desktop-title: 64px;
+      //mobile
+      $mobile-read: 16px;
+      $mobile-cta-text: 18px;
+      $mobile-subtitle: 24px;
+      $mobile-section-title: 36px;
+      $mobile-title: 48px;
 
 
-//blocks
-$background-dark: $DRT-black;
-$background-clear: $clear;
-$background-white: $white;
-$background-red: $DRT-red;
-
-//elements
-$button-cta: $DRT-red;
-$divider-line: $DRT-red;
-
-//Overlays
-$overlay-dark-right:linear-gradient(to left, $DRT-black, $clear);
-$overlay-dark-left:linear-gradient(to right, $DRT-black, $clear);
-$overlay-white: linear-gradient(to top, white, $clear);
-$overlay-dark-full: $clear-black;
-$overlay: $clear-gray;
-
-
-// text
-$text-inverse: $white;
-$text-colored: $DRT-black;
-//desktop
-$desktop-read: 20px;
-$desktop-cta-text: 20px;
-$desktop-subtitle: 36px;
-$desktop-section-title: 48px;
-$desktop-title: 64px;
-//mobile
-$mobile-read: 16px;
-$mobile-cta-text: 18px;
-$mobile-subtitle: 24px;
-$mobile-section-title: 36px;
-$mobile-title: 48px;
-
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300');
-$show-font: 'Rajdhani', sans-serif;
-$read-font: 'Lato', sans-serif;
+// Fonts
+      @import url('https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300');
+      $show-font: 'Rajdhani', sans-serif;
+      $read-font: 'Lato', sans-serif;

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <header class="above-fold-container">
-  <h1>Bike Fitting</h1>
+  <h1 class="animated fadeInDown"><?php the_title();?></h1>
   <hr class="colored-divider"/>
 </header>
 <!-- A-space Banner -->
@@ -10,15 +10,24 @@
 </section>
 <!-- Goal Block -->
 <section class="content-block center">
-  <h2>The Goal</h2>
-  <hr class="colored-divider"/>
-  <p>We want to improve your cycling experience by allowing you to ride faster and longer with greater comfort while at the same time preventing injury.
-  </p>
+  <div class="center hide below-fold-blurb">
+  <?php
+  global $more;
+  $more = 0;
+  query_posts(array('category_name' => 'bike-fit-blurb'));
+  if(have_posts()): while(have_posts()): the_post();?>
+    <h3><?php the_title(); ?></h3>
+    <hr class="colored-divider"/>
+    <article class="content-text">
+      <?php the_content(); ?>
+    </article>
+  <?php endwhile; endif; wp_reset_query();?>
+  </div>
   <br/>
   <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
 </section>
 <!-- Fit Options Block -->
-<section class="row-content">
+<section class="center">
   <?php get_template_part('template-parts/content', 'fit-section');?>
 </section>
 <!-- Process Block -->
@@ -26,11 +35,13 @@
   <?php
     global $more;
     $more = 0;
-    query_posts('cat=14');
+    query_posts(array('category_name' => 'fit-process'));
     if(have_posts()) : while(have_posts()) : the_post();?>
     <h2><?php the_title(); ?></h2>
     <hr class="colored-divider"/>
-    <p><?php the_content();?></p>
+    <article class="content-text">
+      <?php the_content(); ?>
+    </article>
     <?php
     endwhile; endif;
     wp_reset_query();
@@ -44,7 +55,7 @@
     <?php
       global $more;
       $more = 0;
-      query_posts('cat=13');
+      query_posts(array('category_name' => 'fit-testimony'));
       if(have_posts()) : while(have_posts()) : the_post();
       the_content();
       endwhile; endif;

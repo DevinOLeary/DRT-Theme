@@ -4,7 +4,17 @@
 }
 
 
-
+.fit-content {
+  position: relative;
+  .close {
+    position: absolute;
+    right: 10%;
+    top: 50px;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
+}
 
 .button-cta {
   padding: 20px;
@@ -12,6 +22,17 @@
   border: none;
   color: $text-inverse;
   min-width:150px;
+}
+.button-submit {
+  padding: 20px;
+  background-color:$button-cta;
+  border: none;
+  color: $text-inverse;
+  min-width:150px;
+  font-size: $desktop-cta-text;
+}
+.button-submit:hover {
+  cursor:pointer;
 }
 .sub-button {
   padding: 20px;

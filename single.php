@@ -7,13 +7,23 @@
     <h1><?php the_title(); ?></h1>
   <hr class="colored-divider"/>
 </section>
-<section class="content-block">
-  <article class="row-content">
-    <aside>
-      <?php if ( has_post_thumbnail() ) {
-       the_post_thumbnail('medium', true);}?>
+<section class="content-block center">
+  <hgroup class="center">
+    <h4><?php echo get_the_date(); ?></h4>
+    <br/>
+    <h4>Words by <?php the_author(); ?></h4>
+  </hgroup>
+  <br/>
+  <br/>
+  <hr class="section-divider"/>
+  <br/>
+  <article>
+    <aside class="article-image right">
+      <?php if(has_post_thumbnail()) {
+        the_post_thumbnail();
+      }?>
     </aside>
-    <aside class="center">
+    <aside class="wrap-text">
       <p><?php the_content(); ?></p>
     </aside>
   </article>

@@ -5,7 +5,7 @@
   h1, h2, h3 {
     font-family: $show-font;
   }
-  h4, h5, p {
+  h4, h5, p, li {
     font-family: $read-font;
   }
   h1{
@@ -20,7 +20,7 @@
   h4{
     font-size: $mobile-cta-text;
   }
-  p{
+  p, li {
     font-size: $mobile-read;
   }
   a {
@@ -158,20 +158,26 @@
     background-size: cover;
   }
 
-  .ad-block {
+  .ad-block, .category-block {
     background-color: $background-dark;
     color: $text-inverse;
     p,a {
       color: inherit;
     }
   }
-  .category-block {
+
+  .fit-header{
     background-color: $background-dark;
     color: $text-inverse;
+    border:1px solid $DRT-red;
     p,a {
       color: inherit;
     }
   }
+  .fit-header:hover{
+    cursor:pointer;
+  }
+
   .training-plan-block {
     p {
       margin: 0;
@@ -183,8 +189,25 @@
     color: $text-inverse;
     a {
       color: inherit;
+      text-decoration: underline;
     }
   }
+
+  //Form Elements
+
+  .field-wrap .listselect-wrap>div, .field-wrap .pikaday__container, .field-wrap
+   .pikaday__display, .field-wrap>div input, .field-wrap select,
+   .field-wrap textarea
+  .ninja-forms-form-wrap, .ninja-forms-field {
+    font-size: $desktop-read;
+    font-family: $show-font;
+  }
+    label {
+      font-size: $desktop-read;
+      font-family: $show-font;
+    }
+
+
 
 
   //overlay
@@ -192,16 +215,19 @@
     background: $overlay-dark-right;
     background-size: cover;
   }
+
   .overlay-left {
     background: $overlay-dark-left;
     background-size:cover;
     color: $text-inverse;
   }
+
   .overlay-full {
     background: $overlay-dark-full;
     background-size:cover;
     color: $text-inverse;
   }
+
   // Footer
   .footer-block {
     background-color: $DRT-red;
