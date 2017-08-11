@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <header class="above-fold-container">
-  <h1>Bike Fitting</h1>
+  <h1 class="animated fadeInDown"><?php the_title();?></h1>
   <hr class="colored-divider"/>
 </header>
 <!-- A-space Banner -->
@@ -10,6 +10,7 @@
 </section>
 <!-- Goal Block -->
 <section class="content-block center">
+  <div class="center hide below-fold-blurb">
   <?php
   global $more;
   $more = 0;
@@ -21,6 +22,7 @@
       <?php the_content(); ?>
     </article>
   <?php endwhile; endif; wp_reset_query();?>
+  </div>
   <br/>
   <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
 </section>

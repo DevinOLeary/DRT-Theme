@@ -4,7 +4,17 @@
 }
 
 
-
+.fit-content {
+  position: relative;
+  .close {
+    position: absolute;
+    right: 10%;
+    top: 50px;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
+}
 
 .button-cta {
   padding: 20px;

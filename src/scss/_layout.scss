@@ -72,6 +72,9 @@ h1, h2, h3, h4, h5 {
 .hide {
   display: none;
 }
+.show {
+  display: block;
+}
 .insta-logo {
   padding-left: .5em;
 }
@@ -100,7 +103,7 @@ h1, h2, h3, h4, h5 {
   right:20px;
   top:40px;
   z-index: 100;
-
+  display: none;
 }
 .scroll-menu-icon{
   position: absolute;
@@ -145,6 +148,7 @@ h1, h2, h3, h4, h5 {
 }
 //mobile end
 .site-nav {
+  display: none;
   ul {
     width:72%;
     display: flex;
@@ -177,6 +181,7 @@ h1, h2, h3, h4, h5 {
   position:absolute;
   top: -30%;
   right: 0;
+  z-index:50;
 }
 .child-a-space-banner {
   height:100%;
@@ -228,6 +233,7 @@ h1, h2, h3, h4, h5 {
   padding: 4% 0;
   display: flex;
   min-height:400px;
+  z-index: 0;
   // p {
   //   width: 60%;
   //   min-width: 300px;
@@ -275,6 +281,9 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.wrap-text{
+  padding: 0 10%;
 }
 
 .bullet-list {
@@ -342,16 +351,17 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+//Form Elements
+
 .field-wrap .listselect-wrap>div, .field-wrap .pikaday__container, .field-wrap
  .pikaday__display, .field-wrap>div input, .field-wrap select,
  .field-wrap textarea {
    height: 50px;
-   text-align: center;
  }
- 
+
  .nf-field-element, .field-wrap {
    display: flex;
-   justify-content: center;
+   justify-content: left;
  }
 
 
@@ -421,6 +431,7 @@ h1, h2, h3, h4, h5 {
   padding: 16px;
 }
 
+
 .article {
   width: 40%;
   min-width: 400px;
@@ -430,6 +441,16 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   h4{
     margin-bottom: 10px;
+  }
+}
+
+.article-image {
+  width: 40%;
+  margin: 2em;
+  min-width: 300px;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 //overlay
@@ -454,7 +475,9 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
   }
 
-
+.pum-content p{
+  text-align: center;
+}
 //Footer
 .footer-block {
   min-height:270px;

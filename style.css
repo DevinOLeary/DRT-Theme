@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5 {
 .hide {
   display: none; }
 
+.show {
+  display: block; }
+
 .insta-logo {
   padding-left: .5em; }
 
@@ -99,7 +102,8 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   right: 20px;
   top: 40px;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
 
 .scroll-menu-icon {
   position: absolute;
@@ -146,24 +150,26 @@ h1, h2, h3, h4, h5 {
   top: 20px;
   right: 20px; }
 
-.site-nav ul {
-  width: 72%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  float: right;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
-  margin-right: 20px; }
-  .site-nav ul li {
-    padding: .5em .5em;
-    z-index: 100; }
+.site-nav {
+  display: none; }
+  .site-nav ul {
+    width: 72%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    float: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 20px; }
+    .site-nav ul li {
+      padding: .5em .5em;
+      z-index: 100; }
 
 .indented-title {
   text-indent: -999999999px;
@@ -180,7 +186,8 @@ h1, h2, h3, h4, h5 {
   width: 100vw;
   position: absolute;
   top: -30%;
-  right: 0; }
+  right: 0;
+  z-index: 50; }
 
 .child-a-space-banner {
   height: 100%;
@@ -249,7 +256,8 @@ h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 400px; }
+  min-height: 400px;
+  z-index: 0; }
   .content-block .diagonal-overlay {
     width: 50%;
     height: 0;
@@ -304,6 +312,9 @@ h1, h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.wrap-text {
+  padding: 0 10%; }
 
 .bullet-list {
   list-style-type: disc; }
@@ -385,16 +396,15 @@ h1, h2, h3, h4, h5 {
 .field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
 .pikaday__display, .field-wrap > div input, .field-wrap select,
 .field-wrap textarea {
-  height: 50px;
-  text-align: center; }
+  height: 50px; }
 
 .nf-field-element, .field-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left; }
 
 .sub-banner-container {
   height: 80vh;
@@ -479,6 +489,14 @@ h1, h2, h3, h4, h5 {
   .article h4 {
     margin-bottom: 10px; }
 
+.article-image {
+  width: 40%;
+  margin: 2em;
+  min-width: 300px; }
+  .article-image img {
+    width: 100%;
+    height: auto; }
+
 .overlay-left, .overlay-right {
   position: absolute;
   top: 0;
@@ -516,6 +534,9 @@ h1, h2, h3, h4, h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.pum-content p {
+  text-align: center; }
 
 .footer-block {
   min-height: 270px;
@@ -734,11 +755,11 @@ a:focus, button:focus {
 .pikaday__display, .field-wrap > div input, .field-wrap select,
 .field-wrap textarea
 .ninja-forms-form-wrap, .ninja-forms-field {
-  font-size: 36px;
+  font-size: 20px;
   font-family: "Rajdhani", sans-serif; }
 
 label {
-  font-size: 36px;
+  font-size: 20px;
   font-family: "Rajdhani", sans-serif; }
 
 .overlay-right {
@@ -882,6 +903,15 @@ label {
   transition: .3s;
   font-size: 24px; }
 
+.fit-content {
+  position: relative; }
+  .fit-content .close {
+    position: absolute;
+    right: 10%;
+    top: 50px; }
+  .fit-content .close:hover {
+    cursor: pointer; }
+
 .button-cta {
   padding: 20px;
   background-color: #EF504F;
@@ -913,6 +943,14 @@ label {
 
 button:hover {
   cursor: pointer; }
+
+.delay {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
+
+.animated {
+  -webkit-animation-duration: 1.5s !important;
+          animation-duration: 1.5s !important; }
 
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;

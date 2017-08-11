@@ -2,6 +2,8 @@
 // Import stylesheet
 function DRT_resources() {
   wp_enqueue_style('style', get_stylesheet_uri());
+  wp_register_style('animations', get_template_directory_uri() . '/bower_components/animate.css/animate.min.css');
+  wp_enqueue_style('animations');
   wp_register_script('main', get_template_directory_uri() . '/build/js/main.js', array('jquery'), true);
   wp_enqueue_script('main');
   wp_register_script('jquery', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.min.js', array('jquery'), true);
@@ -13,6 +15,8 @@ function theme_features() {
   if (function_exists('add_theme_support')) {
   //add featured image
   add_theme_support('post-thumbnails');
+  //image size
+
   //theme logo
   add_theme_support( 'custom-logo', array(
     'flex-height' => true,
@@ -45,13 +49,9 @@ add_action('init', 'DRT_features');
 add_theme_support('title-tag');
 
 
-
+// Post Excerpt more link
 function remove_more_link_scroll( $link ) {
 	$link = preg_replace( '|#more-[0-9]+|', '', $link );
 	return $link;
 }
 add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
-
-
-
-?>

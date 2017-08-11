@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- A-space Container -->
 <header class="above-fold-container">
-  <h1><?php the_title(); ?></h1>
+  <h1 class="animated fadeInDown"><?php the_title(); ?></h1>
   <hr class="colored-divider"/>
 </header>
 <!-- Banner -->
@@ -9,7 +9,7 @@
   <figure class="team-ride-pic child-a-space-banner">
     <div class="overlay-left">
       <article class="banner-copy-container">
-        <h3><?php echo get_post_field('post_content', $post->ID); ?></h3>
+        <h3 class="animated fadeInDown delay"><?php echo get_post_field('post_content', $post->ID); ?></h3>
       </article>
     </div>
   </figure>
@@ -51,7 +51,7 @@
 </section>
 <!-- CTA -->
 <section class="small-block">
-  <a href="<?php echo get_permalink(44);?>"><button class="button-cta"><h4>Join The Fam</h4></button></a>
+  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4>Join The Fam</h4></button></a>
   <br/>
 </section>
 <?php get_footer(); ?>
