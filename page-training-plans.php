@@ -8,22 +8,22 @@
   <ul class="delay animated fadeInLeft">
     <li class="step-list-container">
       <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
-      <p>Read through the packages and find one what sounds right for you.</p>
+      <p>Read through the packages and find one that sounds right for you</p>
     </li>
     <li class="step-list-container">
       <figure><a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><div class="hexagon"><h4 class="show-font">Step <br/>2</h4></div></a></figure>
-      <p>Contact Don and start planning your pesonalized training plan</p>
+      <p>Contact Don and start planning your personalized training plan</p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon popmake-training-modal"><h4 class="show-font">Step <br/>3</h4></div></figure>
-      <p>Realize the your true athletic potential!</p>
+      <p>Realize your true athletic potential!</p>
     </li>
   </ul>
 </header>
 <!-- Training Packages Container -->
-<section class="content-block center">
+<section class="content-block center" id="trainingPackages">
   <div class="training-rings hide">
-    <h2 id="trainingPackages">Training Packages</h2>
+    <h2>Training Packages</h2>
     <hr class="colored-divider"/>
     <ul class="row-content">
       <a href="#planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>

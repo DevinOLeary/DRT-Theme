@@ -27,7 +27,7 @@
         <aside class="exit" id="exit"><span>X<span></aside>
         <div class="animated fadeInDown">
           <a href="<?php echo get_permalink(27); ?>"><h1 id="title">DRT</h1></a>
-          <?php wp_nav_menu(array('theme_location' => 'mobile')); ?>
+          <?php wp_nav_menu(array('theme_location' => 'mobile', 'container_class' => 'menu')); ?>
         </div>
       </div>
     </header>

@@ -16,6 +16,8 @@ function theme_features() {
   //add featured image
   add_theme_support('post-thumbnails');
   //image size
+  add_image_size('rider-thumb', 250, 250, array('center', 'center'));
+  add_image_size('rider-profile', 200, 200, array('center', 'center'));
 
   //theme logo
   add_theme_support( 'custom-logo', array(

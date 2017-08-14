@@ -65,12 +65,25 @@
      height: 270px;
    }
 
+
+//Images
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
     width: 50vw;
   }
 
-
+  .home-banner {
+    background-image: url('build/images/Don-Racing.png');
+  }
+  .drt-team-banner {
+    background-image: url('build/images/podium.png');
+  }
+  .team-ride-pic {
+    background-image: url('build/images/team-ride.png');
+  }
+  .fit-pic {
+    background-image: url('build/images/fit-pic.png');
+  }
 
 
 

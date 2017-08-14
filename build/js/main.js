@@ -35,8 +35,16 @@ $(function() {
       $(trainingRings).addClass('animated fadeInLeft');
     }
     if (scroll >=1300) {
-      $(deepPage).addClass('show animated fadeInLeft');
+      $(deepPage).removeClass('hide');
+      $(deepPage).addClass('animated fadeIn');
     }
+  });
+});
+
+//rider hover info
+$(function() {
+  $(".rider-pic").hover(function(){
+    $(this).find(".overlay-full").fadeToggle();
   });
 });
 

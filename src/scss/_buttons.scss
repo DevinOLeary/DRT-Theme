@@ -34,14 +34,14 @@
 .button-submit:hover {
   cursor:pointer;
 }
-.sub-button {
+.button-secondary {
   padding: 20px;
   background-color: $background-clear;
   border: 2px solid $button-cta;
   color: $text-inverse;
   transition: .3s;
 }
-.sub-button:hover {
+.button-secondary:hover {
   background-color: $background-red;
 
 }

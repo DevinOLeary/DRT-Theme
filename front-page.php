@@ -42,7 +42,7 @@
       <h1 class="text-inverse">DRT Racing</h1>
       <hr class="colored-divider"/>
       <h3>Crazy hot sexy speed.</h3>
-      <a href=""><button class="sub-button"><h4>Learn More</h4></button></a>
+      <a href=""><button class="button-secondary"><h4>Learn More</h4></button></a>
       <p class="text-inverse">Check out our <a href="https://www.instagram.com/drtconsulting/?hl=en" target="_blank"><img class="insta-logo" src="<?php bloginfo('template_directory');?>/build/images/instagram-logo.png" alt="Instagram" width="40" height="40"/></a></p>
     </div>
   </div>

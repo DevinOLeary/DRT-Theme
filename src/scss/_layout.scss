@@ -21,7 +21,7 @@ figure {
 p, li{
   line-height: 30px;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3{
   text-align: center;
 }
 
@@ -38,6 +38,9 @@ h1, h2, h3, h4, h5 {
 }
 .right {
   float: right;
+}
+.left {
+  float: left;
 }
 .row-content {
   display: flex;
@@ -174,15 +177,17 @@ h1, h2, h3, h4, h5 {
   height: 50vh;
   min-height: 450px;
   width: 100vw;
+  .a-space-banner {
+    height:130%;
+    width: 100vw;
+    position:absolute;
+    top: -30%;
+    left: 0;
+    z-index:50;
+  }
+
 }
-.a-space-banner {
-  height:130%;
-  width: 100vw;
-  position:absolute;
-  top: -30%;
-  right: 0;
-  z-index:50;
-}
+
 .child-a-space-banner {
   height:100%;
   width: 100vw;
@@ -294,6 +299,12 @@ h1, h2, h3, h4, h5 {
   position: relative;
   width: 100%;
   margin-top: 50px;
+  p {
+    margin: 20px;
+  }
+  article{
+    width: 100%;
+  }
 }
 .small-block {
   display: flex;
@@ -348,6 +359,9 @@ h1, h2, h3, h4, h5 {
   margin: 1em;
   li {
       margin: 1em;
+      .rider-name {
+        margin-top:50%;
+      }
     }
 }
 
@@ -376,6 +390,7 @@ h1, h2, h3, h4, h5 {
 .drt-team-banner {
   height: 100%;
   width: 100%;
+  z-index: 50;
 }
 .banner-copy-container {
   display: flex;
@@ -424,6 +439,20 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     z-index: 2;
   }
+}
+
+.rider-pic {
+  position: relative;
+  padding: 0;
+  margin:0;
+   .overlay-full {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 97%;
+     z-index: 2;
+   }
 }
 
 .fit-header {
@@ -478,6 +507,8 @@ h1, h2, h3, h4, h5 {
 .pum-content p{
   text-align: center;
 }
+
+
 //Footer
 .footer-block {
   min-height:270px;

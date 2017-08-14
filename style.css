@@ -19,7 +19,7 @@ figure {
 p, li {
   line-height: 30px; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   text-align: center; }
 
 .center {
@@ -40,6 +40,9 @@ h1, h2, h3, h4, h5 {
 
 .right {
   float: right; }
+
+.left {
+  float: left; }
 
 .row-content {
   display: -webkit-box;
@@ -180,14 +183,13 @@ h1, h2, h3, h4, h5 {
   height: 50vh;
   min-height: 450px;
   width: 100vw; }
-
-.a-space-banner {
-  height: 130%;
-  width: 100vw;
-  position: absolute;
-  top: -30%;
-  right: 0;
-  z-index: 50; }
+  .a-space-banner-container .a-space-banner {
+    height: 130%;
+    width: 100vw;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    z-index: 50; }
 
 .child-a-space-banner {
   height: 100%;
@@ -323,6 +325,10 @@ h1, h2, h3, h4, h5 {
   position: relative;
   width: 100%;
   margin-top: 50px; }
+  .ad-block p {
+    margin: 20px; }
+  .ad-block article {
+    width: 100%; }
 
 .small-block {
   display: -webkit-box;
@@ -392,6 +398,8 @@ h1, h2, h3, h4, h5 {
   margin: 1em; }
   .riders-grid li {
     margin: 1em; }
+    .riders-grid li .rider-name {
+      margin-top: 50%; }
 
 .field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
 .pikaday__display, .field-wrap > div input, .field-wrap select,
@@ -413,7 +421,8 @@ h1, h2, h3, h4, h5 {
 
 .drt-team-banner {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  z-index: 50; }
 
 .banner-copy-container {
   display: -webkit-box;
@@ -464,6 +473,18 @@ h1, h2, h3, h4, h5 {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2; }
+
+.rider-pic {
+  position: relative;
+  padding: 0;
+  margin: 0; }
+  .rider-pic .overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
     z-index: 2; }
 
 .fit-header {
@@ -930,7 +951,7 @@ label {
 .button-submit:hover {
   cursor: pointer; }
 
-.sub-button {
+.button-secondary {
   padding: 20px;
   background-color: transparent;
   border: 2px solid #EF504F;
@@ -938,7 +959,7 @@ label {
   -webkit-transition: .3s;
   transition: .3s; }
 
-.sub-button:hover {
+.button-secondary:hover {
   background-color: #EF504F; }
 
 button:hover {
@@ -1006,4 +1027,12 @@ a, a:hover, a:focus, a:visited {
     height: 270px; }
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
-    width: 50vw; } }
+    width: 50vw; }
+  .home-banner {
+    background-image: url("build/images/Don-Racing.png"); }
+  .drt-team-banner {
+    background-image: url("build/images/podium.png"); }
+  .team-ride-pic {
+    background-image: url("build/images/team-ride.png"); }
+  .fit-pic {
+    background-image: url("build/images/fit-pic.png"); } }
