@@ -43,7 +43,7 @@
   </article>
 </section>
 <!-- Secondary Services -->
-<section class="content-block center">
+<section class="content-block center text-colored">
   <br/>
   <h2>Some Other Ideas</h2>
   <hr class="colored-divider"/>
@@ -69,7 +69,7 @@
 </section>
 <hr class="section-divider"/>
 <!-- Plan Contact -->
-<section class="content-block center">
+<section class="content-block center text-colored">
   <?php
     global $more;
     $more = 0;

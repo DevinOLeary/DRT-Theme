@@ -1,5 +1,5 @@
 
-  <article class="training-plan-block center" id="small-plan">
+  <article class="training-plan-block center text-colored" id="small-plan">
     <?php
     global $more;
     $more = 0;
@@ -9,10 +9,10 @@
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>
-      </article>  
+      </article>
     <?php endwhile; endif; wp_reset_query();?>
   </article>
-  <article class="training-plan-block center" id="medium-plan">
+  <article class="training-plan-block center text-colored" id="medium-plan">
     <?php
     global $more;
     $more = 0;
@@ -22,10 +22,10 @@
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>
-      </article>  
+      </article>
     <?php endwhile; endif; wp_reset_query();?>
   </article>
-  <article class="training-plan-block center" id="large-plan">
+  <article class="training-plan-block center text-colored" id="large-plan">
     <?php
     global $more;
     $more = 0;
@@ -35,6 +35,6 @@
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>
-      </article>  
+      </article>
     <?php endwhile; endif; wp_reset_query();?>
   </article>

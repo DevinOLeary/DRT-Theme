@@ -772,6 +772,9 @@ a:focus, button:focus {
     color: inherit;
     text-decoration: underline; }
 
+.article-list {
+  color: rgba(0, 0, 0, 0.8); }
+
 .field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
 .pikaday__display, .field-wrap > div input, .field-wrap select,
 .field-wrap textarea

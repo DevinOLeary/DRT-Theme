@@ -60,7 +60,7 @@
   </div>
 </section>
 <hr class="section-divider"/>
-<section class="content-block center">
+<section class="content-block center text-colored">
   <h3>Let's Speed Things Up</h3>
   <br/>
   <br/>

@@ -18,7 +18,7 @@
               the_post_thumbnail('medium');
             }?>
           </a>
-          <aside class="center">
+          <aside class="center text-colored">
             <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
             <h5><?php echo get_the_date(); ?></h5>
             <br/>

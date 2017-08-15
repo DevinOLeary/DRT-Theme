@@ -28,11 +28,11 @@ $(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 300) {
       $(belowFold).removeClass('hide');
-      $(belowFold).addClass('animated fadeInLeft');
+      $(belowFold).addClass('animated fadeIn');
     }
     if (scroll >= 600) {
       $(trainingRings).removeClass('hide');
-      $(trainingRings).addClass('animated fadeInLeft');
+      $(trainingRings).addClass('animated fadeIn');
     }
     if (scroll >=1300) {
       $(deepPage).removeClass('hide');

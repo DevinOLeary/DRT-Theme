@@ -7,7 +7,7 @@
     <h1 class="animated fadeInDown"><?php the_title(); ?></h1>
   <hr class="colored-divider"/>
 </section>
-<section class="content-block center animated fadeIn delay">
+<section class="content-block center animated fadeIn delay text-colored">
     <hgroup class="center">
       <h4><?php echo get_the_date(); ?></h4>
       <br/>

@@ -10,7 +10,7 @@
 </section>
 <!-- Goal Block -->
 <section class="content-block center">
-  <div class="center hide below-fold-blurb">
+  <div class="center hide below-fold-blurb text-colored">
     <?php
     global $more;
     $more = 0;
@@ -31,7 +31,7 @@
   <?php get_template_part('template-parts/content', 'fit-section');?>
 </section>
 <!-- Process Block -->
-<section class="content-block center">
+<section class="content-block center text-colored">
   <?php
     global $more;
     $more = 0;

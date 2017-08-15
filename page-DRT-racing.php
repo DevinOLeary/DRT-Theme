@@ -16,7 +16,7 @@
 </section>
 <!-- Team Blurb -->
 <section class="content-block center">
-  <div class="hide below-fold-blurb center">
+  <div class="hide below-fold-blurb center text-colored">
     <?php
       global $more;
       $more = 0;
@@ -46,7 +46,7 @@
 </section>
 
 <!-- Rider Shots -->
-<section class="content-block center">
+<section class="content-block center text-colored">
   <h2>Riders</h2>
   <hr class="colored-divider"/>
   <?php get_template_part('template-parts/content', 'riders'); ?>
