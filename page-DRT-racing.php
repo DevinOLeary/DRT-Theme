@@ -46,7 +46,7 @@
 </section>
 
 <!-- Rider Shots -->
-<section class="content-block center text-colored">
+<section class="content-block center text-colored" id="riders">
   <h2>Riders</h2>
   <hr class="colored-divider"/>
   <?php get_template_part('template-parts/content', 'riders'); ?>

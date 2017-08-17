@@ -19,7 +19,7 @@ figure {
 
 // text
 p, li{
-  line-height: 30px;
+  line-height: 175%;
 }
 h1, h2, h3{
   text-align: center;
@@ -39,10 +39,18 @@ h1, h2, h3{
 .right {
   float: right;
 }
+.mobile-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .left {
   float: left;
 }
 .row-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,8 +182,8 @@ h1, h2, h3{
 //A-space
 .a-space-banner-container{
   position: relative;
-  height: 50vh;
-  min-height: 450px;
+  height: 60vh;
+  min-height: 350px;
   width: 100vw;
   .a-space-banner {
     height:130%;
@@ -289,6 +297,7 @@ h1, h2, h3{
 }
 .wrap-text{
   padding: 0 10%;
+  max-width: 700px;
 }
 
 .bullet-list {
@@ -315,7 +324,7 @@ h1, h2, h3{
   min-height:100px;
 }
 .training-plan-block-container {
-  height: 450px;
+  height: 550px;
   width: 100%;
 }
 .category-block {
@@ -509,6 +518,12 @@ h1, h2, h3{
 }
 
 
+.pagination {
+  position: absolute;
+  bottom: 0;
+}
+
+
 //Footer
 .footer-block {
   min-height:270px;
@@ -519,15 +534,14 @@ h1, h2, h3{
   align-items: center;
   .footer-menu {
     margin-top: 2em;
-    width:50%;
-
+    width:80%;
     .footer-nav {
       ul {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         height: 180px;
       }
     }

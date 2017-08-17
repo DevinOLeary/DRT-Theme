@@ -44,7 +44,7 @@ $(function() {
 //rider hover info
 $(function() {
   $(".rider-pic").hover(function(){
-    $(this).find(".overlay-full").fadeToggle();
+    $(this).find(".overlay-full").stop(true,true).fadeToggle();
   });
 });
 
@@ -111,6 +111,11 @@ $(function() {
 
 
 // Other Training Options
+$(function() {
+  $(".other-plan").hover(function() {
+    $(this).children().stop(true,true).fadeToggle(200);
+  });
+});
 $(function() {
   $(".other-plan-content").hide();
   $("#otherPlanContainer").hide();

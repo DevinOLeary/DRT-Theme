@@ -6,7 +6,7 @@
     <div class="overlay-left">
       <article class="banner-copy-container">
         <h3 class="animated fadeInDown">Get the training skills you need to feel and perform your best on the bike</h3>
-        <a href="<?php echo get_permalink(48); ?>"><button class="button-cta delay animated fadeInDown"><h4>Start Planning</h4></button></a>
+        <a href="<?php echo esc_url(get_permalink(get_page_by_title('Training Plans')));?>"><button class="button-cta delay animated fadeInDown"><h4>Start Planning</h4></button></a>
       </article>
     </div>
   </div>
@@ -42,7 +42,7 @@
       <h1 class="text-inverse">DRT Racing</h1>
       <hr class="colored-divider"/>
       <h3>Crazy hot sexy speed.</h3>
-      <a href=""><button class="button-secondary"><h4>Learn More</h4></button></a>
+      <a href="<?php echo esc_url(get_permalink(get_page_by_title('DRT Racing')));?>"><button class="button-secondary"><h4>Learn More</h4></button></a>
       <p class="text-inverse">Check out our <a href="https://www.instagram.com/drtconsulting/?hl=en" target="_blank"><img class="insta-logo" src="<?php bloginfo('template_directory');?>/build/images/instagram-logo.png" alt="Instagram" width="40" height="40"/></a></p>
     </div>
   </div>

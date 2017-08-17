@@ -26,6 +26,7 @@ function theme_features() {
     'header-text' => array('site-logo'),
   ) );
   }
+  ini_set( 'mysql.trace_mode', 0 );
 }
 
 add_action('after_setup_theme', 'theme_features');

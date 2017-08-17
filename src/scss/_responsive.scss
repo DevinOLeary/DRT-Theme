@@ -24,11 +24,10 @@
       ul{
         li {
           font-size: $desktop-read;
-          padding: 16px;
+          padding: 10px;
         }
         li:last-child {
-          max-height: 25px;
-          padding: 16px 36px;
+          padding: 10px 36px;
         }
       }
     }
@@ -36,11 +35,10 @@
   .footer-block {
     flex-direction: row;
     .footer-menu {
-      width:30%;
-      .footer-nav {
-        ul {
-          flex-direction: column;
-        }
+        width: 40%;
+      .footer-nav ul {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -64,6 +62,9 @@
      width: 270px;
      height: 270px;
    }
+   .training-plan-block-container {
+     height: 500px;
+   }
 
 
 //Images
@@ -84,7 +85,12 @@
   .fit-pic {
     background-image: url('build/images/fit-pic.png');
   }
+  .a-space-banner-container{
+    height: 70vh;
+  }
 
+
+//Spacing
 
 
 

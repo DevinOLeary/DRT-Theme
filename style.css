@@ -17,7 +17,7 @@ figure {
   margin: 0; }
 
 p, li {
-  line-height: 30px; }
+  line-height: 175%; }
 
 h1, h2, h3 {
   text-align: center; }
@@ -41,10 +41,27 @@ h1, h2, h3 {
 .right {
   float: right; }
 
+.mobile-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+
 .left {
   float: left; }
 
 .row-content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,8 +197,8 @@ h1, h2, h3 {
 
 .a-space-banner-container {
   position: relative;
-  height: 50vh;
-  min-height: 450px;
+  height: 60vh;
+  min-height: 350px;
   width: 100vw; }
   .a-space-banner-container .a-space-banner {
     height: 130%;
@@ -316,7 +333,8 @@ h1, h2, h3 {
           align-items: center; }
 
 .wrap-text {
-  padding: 0 10%; }
+  padding: 0 10%;
+  max-width: 700px; }
 
 .bullet-list {
   list-style-type: disc; }
@@ -348,7 +366,7 @@ h1, h2, h3 {
   min-height: 100px; }
 
 .training-plan-block-container {
-  height: 450px;
+  height: 550px;
   width: 100%; }
 
 .category-block {
@@ -559,6 +577,10 @@ h1, h2, h3 {
 .pum-content p {
   text-align: center; }
 
+.pagination {
+  position: absolute;
+  bottom: 0; }
+
 .footer-block {
   min-height: 270px;
   width: 100%;
@@ -576,23 +598,22 @@ h1, h2, h3 {
           align-items: center; }
   .footer-block .footer-menu {
     margin-top: 2em;
-    width: 50%; }
+    width: 80%; }
     .footer-block .footer-menu .footer-nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       height: 180px; }
   .footer-block .contribution-links {
     margin: .5em; }
@@ -713,12 +734,14 @@ a:focus, button:focus {
 .home-banner {
   background-image: url("build/images/Don-Racing.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .drt-team-banner {
   background-image: url("build/images/podium.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .banner-copy-container h3 {
   color: white; }
@@ -726,7 +749,8 @@ a:focus, button:focus {
 .team-ride-pic {
   background-image: url("build/images/team-ride.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .training-camp-pic {
   background-image: url("build/images/training-camp.jpeg");
@@ -744,7 +768,8 @@ a:focus, button:focus {
 .fit-pic {
   background-image: url("build/images/fit-pic.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .ad-block, .category-block {
   background-color: rgba(0, 0, 0, 0.8);
@@ -998,18 +1023,20 @@ a, a:hover, a:focus, a:visited {
     font-size: 20px; }
   .site-header .site-nav ul li {
     font-size: 20px;
-    padding: 16px; }
+    padding: 10px; }
   .site-header .site-nav ul li:last-child {
-    max-height: 25px;
-    padding: 16px 36px; }
+    padding: 10px 36px; }
   .footer-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
     .footer-block .footer-menu {
-      width: 30%; }
+      width: 40%; }
       .footer-block .footer-menu .footer-nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -1028,6 +1055,8 @@ a, a:hover, a:focus, a:visited {
   .large-ring {
     width: 270px;
     height: 270px; }
+  .training-plan-block-container {
+    height: 500px; }
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
     width: 50vw; }
@@ -1038,4 +1067,6 @@ a, a:hover, a:focus, a:visited {
   .team-ride-pic {
     background-image: url("build/images/team-ride.png"); }
   .fit-pic {
-    background-image: url("build/images/fit-pic.png"); } }
+    background-image: url("build/images/fit-pic.png"); }
+  .a-space-banner-container {
+    height: 70vh; } }

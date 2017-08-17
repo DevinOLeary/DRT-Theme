@@ -32,7 +32,7 @@
     </ul>
   </div>
   <!-- Package content box -->
-  <div id="planContent" class="training-plan-block-container">
+  <div id="planContent" class="training-plan-block-container hide">
     <?php get_template_part('template-parts/content', 'training-plan'); ?>
   </div>
 </section>
@@ -50,13 +50,13 @@
   <br/>
   <div class="row-content">
     <!-- Training Camps -->
-    <a href="#otherPlanContainer"><figure id="trainingCamp" class="training-camp-pic content-block">
+    <a href="#otherPlanContainer"><figure id="trainingCamp" class="training-camp-pic content-block other-plan">
       <div class="overlay-full center">
         <h2>Training Camps</h2>
       </div>
     </figure></a>
     <!-- Performance Evaluation -->
-    <a href="#otherPlanContainer"><figure id="performanceEval" class="performance-eval-pic content-block">
+    <a href="#otherPlanContainer"><figure id="performanceEval" class="performance-eval-pic content-block other-plan">
       <div class="overlay-full center">
         <h2>Performance Evaluation</h2>
       </div>

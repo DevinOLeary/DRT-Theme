@@ -23,7 +23,7 @@
       </article>
     <?php endwhile; endif; wp_reset_query();?>
     <br/>
-    <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
+    <a href="<?php echo esc_url(get_post_permalink(173));?>"><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
   </div>
 </section>
 <!-- Fit Options Block -->
@@ -47,7 +47,7 @@
     wp_reset_query();
   ?>
   <br/>
-  <a href=""><button class="button-cta"><h4>Schedule Fitting</h4></button></a>
+  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4>Schedule Fitting</h4></button></a>
 </section>
 <!-- Testimony Block -->
 <section class="ad-block center">
