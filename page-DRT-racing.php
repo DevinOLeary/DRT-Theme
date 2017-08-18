@@ -53,7 +53,7 @@
 </section>
 <!-- CTA -->
 <section class="small-block">
-  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4>Join The Fam</h4></button></a>
+  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4><?php the_field('join_team_button'); ?></h4></button></a>
   <br/>
 </section>
 <?php get_footer(); ?>

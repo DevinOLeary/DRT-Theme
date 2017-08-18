@@ -5,7 +5,7 @@
   <hr class="colored-divider"/>
 </section>
 <section class="content-block center animated fadeIn delay">
-  <article class="mobile-center">
+  <article>
     <aside class="article-image right center">
       <?php if(has_post_thumbnail()) {
         the_post_thumbnail('rider-profile');
@@ -15,7 +15,7 @@
       <p><?php the_content(); ?></p>
     </aside>
   </article>
-  <a href="<?php echo esc_url(get_permalink(get_page_by_title('DRT racing')));?>">
+  <a href="<?php echo esc_url(get_permalink(get_page_by_title('DRT racing')));?>/#riders">
     <button class="button-cta"><h4 class="left">Back to Team</h4></button>
   </a>
 

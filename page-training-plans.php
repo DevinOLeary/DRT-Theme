@@ -8,15 +8,15 @@
   <ul class="delay animated fadeInLeft">
     <li class="step-list-container">
       <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
-      <p>Read through the packages and find one that sounds right for you</p>
+      <p><?php the_field('first_step'); ?></p>
     </li>
     <li class="step-list-container">
       <figure><a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><div class="hexagon"><h4 class="show-font">Step <br/>2</h4></div></a></figure>
-      <p>Contact Don and start planning your personalized training plan</p>
+      <p><?php the_field('second_step'); ?></p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon popmake-training-modal"><h4 class="show-font">Step <br/>3</h4></div></figure>
-      <p>Realize your true athletic potential!</p>
+      <p><?php the_field('third_step'); ?></p>
     </li>
   </ul>
 </header>

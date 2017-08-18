@@ -23,7 +23,7 @@
       </article>
     <?php endwhile; endif; wp_reset_query();?>
     <br/>
-    <a href="<?php echo esc_url(get_post_permalink(173));?>"><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
+    <a href="<?php echo esc_url(get_post_permalink(173));?>"><button class="button-cta"><h4><?php the_field('title_of_fit_article'); ?></h4></button></a>
   </div>
 </section>
 <!-- Fit Options Block -->
