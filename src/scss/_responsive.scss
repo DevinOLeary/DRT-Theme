@@ -24,11 +24,10 @@
       ul{
         li {
           font-size: $desktop-read;
-          padding: 16px;
+          padding: 10px;
         }
         li:last-child {
-          max-height: 25px;
-          padding: 16px 36px;
+          padding: 10px 36px;
         }
       }
     }
@@ -36,11 +35,10 @@
   .footer-block {
     flex-direction: row;
     .footer-menu {
-      width:30%;
-      .footer-nav {
-        ul {
-          flex-direction: column;
-        }
+        width: 40%;
+      .footer-nav ul {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -64,14 +62,35 @@
      width: 270px;
      height: 270px;
    }
+   .training-plan-block-container {
+     height: 500px;
+   }
 
+
+//Images
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
     width: 50vw;
   }
 
+  .home-banner {
+    background-image: url('build/images/Don-Racing.png');
+  }
+  .drt-team-banner {
+    background-image: url('build/images/podium.png');
+  }
+  .team-ride-pic {
+    background-image: url('build/images/team-ride.png');
+  }
+  .fit-pic {
+    background-image: url('build/images/fit-pic.png');
+  }
+  .a-space-banner-container{
+    height: 70vh;
+  }
 
 
+//Spacing
 
 
 

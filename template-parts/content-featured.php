@@ -13,12 +13,12 @@
         $query->the_post();
         ?>
         <div class="row-content">
-          <figure class="article-image">
+          <a href="<?php echo esc_url( get_permalink()); ?>" class="article-image">
             <?php if(has_post_thumbnail()) {
               the_post_thumbnail('medium');
             }?>
-          </figure>
-          <aside class="center">
+          </a>
+          <aside class="center text-colored">
             <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
             <h5><?php echo get_the_date(); ?></h5>
             <br/>

@@ -18,25 +18,18 @@ var $ = jQuery.noConflict();
 // });
 
 
-// Scroll Fade Ins
+//Scroll Fade Ins
 $(function() {
-  var belowFold = ".below-fold-blurb",
-  deepPage = ".deep-page-section",
-  trainingRings = ".training-rings";
+  $(window).scroll(function(){
+    console.log("success");
+  });
+});
 
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 300) {
-      $(belowFold).removeClass('hide');
-      $(belowFold).addClass('animated fadeInLeft');
-    }
-    if (scroll >= 600) {
-      $(trainingRings).removeClass('hide');
-      $(trainingRings).addClass('animated fadeInLeft');
-    }
-    if (scroll >=1300) {
-      $(deepPage).addClass('show animated fadeInLeft');
-    }
+
+//rider hover info
+$(function() {
+  $(".rider-pic").hover(function(){
+    $(this).find(".overlay-full").stop(true,true).fadeToggle();
   });
 });
 
@@ -104,6 +97,11 @@ $(function() {
 
 // Other Training Options
 $(function() {
+  $(".other-plan").hover(function() {
+    $(this).children().stop(true,true).fadeToggle(200);
+  });
+});
+$(function() {
   $(".other-plan-content").hide();
   $("#otherPlanContainer").hide();
   $("#trainingCamp").on('click', function() {
@@ -146,18 +144,18 @@ $(function() {
   });
 });
 
-// smooth scrolling
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
+//smooth scrolling
+// $(function() {
+//   $('a[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//       if (target.length) {
+//         $('html, body').animate({
+//           scrollTop: target.offset().top
+//         }, 500);
+//         return false;
+//       }
+//     }
+//   });
+// });

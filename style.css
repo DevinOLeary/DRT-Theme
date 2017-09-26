@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300");
 
-body {
+body, html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -17,9 +17,9 @@ figure {
   margin: 0; }
 
 p, li {
-  line-height: 30px; }
+  line-height: 175%; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   text-align: center; }
 
 .center {
@@ -41,7 +41,27 @@ h1, h2, h3, h4, h5 {
 .right {
   float: right; }
 
+.mobile-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+
+.left {
+  float: left; }
+
 .row-content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +86,7 @@ h1, h2, h3, h4, h5 {
   text-align: center; }
 
 .colored-divider {
-  width: 250px;
+  width: 50%;
   height: 3px; }
 
 .section-divider {
@@ -177,17 +197,16 @@ h1, h2, h3, h4, h5 {
 
 .a-space-banner-container {
   position: relative;
-  height: 50vh;
-  min-height: 450px;
+  height: 60vh;
+  min-height: 350px;
   width: 100vw; }
-
-.a-space-banner {
-  height: 130%;
-  width: 100vw;
-  position: absolute;
-  top: -30%;
-  right: 0;
-  z-index: 50; }
+  .a-space-banner-container .a-space-banner {
+    height: 130%;
+    width: 100vw;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    z-index: 50; }
 
 .child-a-space-banner {
   height: 100%;
@@ -203,7 +222,11 @@ h1, h2, h3, h4, h5 {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 2em 20%; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 20%;
+  min-width: 250px; }
 
 .above-fold-container {
   display: -webkit-box;
@@ -223,7 +246,8 @@ h1, h2, h3, h4, h5 {
   position: relative; }
   .above-fold-container p {
     width: 80%;
-    max-width: 800px; }
+    max-width: 800px;
+    min-width: 50px; }
   .above-fold-container .step-list-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -314,7 +338,8 @@ h1, h2, h3, h4, h5 {
           align-items: center; }
 
 .wrap-text {
-  padding: 0 10%; }
+  padding: 0 10%;
+  max-width: 700px; }
 
 .bullet-list {
   list-style-type: disc; }
@@ -323,6 +348,10 @@ h1, h2, h3, h4, h5 {
   position: relative;
   width: 100%;
   margin-top: 50px; }
+  .ad-block p {
+    margin: 20px; }
+  .ad-block article {
+    width: 100%; }
 
 .small-block {
   display: -webkit-box;
@@ -342,7 +371,7 @@ h1, h2, h3, h4, h5 {
   min-height: 100px; }
 
 .training-plan-block-container {
-  height: 450px;
+  height: 550px;
   width: 100%; }
 
 .category-block {
@@ -392,6 +421,8 @@ h1, h2, h3, h4, h5 {
   margin: 1em; }
   .riders-grid li {
     margin: 1em; }
+    .riders-grid li .rider-name {
+      margin-top: 50%; }
 
 .field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
 .pikaday__display, .field-wrap > div input, .field-wrap select,
@@ -413,7 +444,8 @@ h1, h2, h3, h4, h5 {
 
 .drt-team-banner {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  z-index: 50; }
 
 .banner-copy-container {
   display: -webkit-box;
@@ -464,6 +496,18 @@ h1, h2, h3, h4, h5 {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2; }
+
+.rider-pic {
+  position: relative;
+  padding: 0;
+  margin: 0; }
+  .rider-pic .overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
     z-index: 2; }
 
 .fit-header {
@@ -538,6 +582,10 @@ h1, h2, h3, h4, h5 {
 .pum-content p {
   text-align: center; }
 
+.pagination {
+  position: absolute;
+  bottom: 0; }
+
 .footer-block {
   min-height: 270px;
   width: 100%;
@@ -555,23 +603,22 @@ h1, h2, h3, h4, h5 {
           align-items: center; }
   .footer-block .footer-menu {
     margin-top: 2em;
-    width: 50%; }
+    width: 80%; }
     .footer-block .footer-menu .footer-nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       height: 180px; }
   .footer-block .contribution-links {
     margin: .5em; }
@@ -692,12 +739,14 @@ a:focus, button:focus {
 .home-banner {
   background-image: url("build/images/Don-Racing.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .drt-team-banner {
   background-image: url("build/images/podium.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .banner-copy-container h3 {
   color: white; }
@@ -705,7 +754,8 @@ a:focus, button:focus {
 .team-ride-pic {
   background-image: url("build/images/team-ride.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .training-camp-pic {
   background-image: url("build/images/training-camp.jpeg");
@@ -723,7 +773,8 @@ a:focus, button:focus {
 .fit-pic {
   background-image: url("build/images/fit-pic.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .ad-block, .category-block {
   background-color: rgba(0, 0, 0, 0.8);
@@ -750,6 +801,9 @@ a:focus, button:focus {
   .ride-info-container a {
     color: inherit;
     text-decoration: underline; }
+
+.article-list {
+  color: rgba(0, 0, 0, 0.8); }
 
 .field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap
 .pikaday__display, .field-wrap > div input, .field-wrap select,
@@ -930,7 +984,7 @@ label {
 .button-submit:hover {
   cursor: pointer; }
 
-.sub-button {
+.button-secondary {
   padding: 20px;
   background-color: transparent;
   border: 2px solid #EF504F;
@@ -938,7 +992,7 @@ label {
   -webkit-transition: .3s;
   transition: .3s; }
 
-.sub-button:hover {
+.button-secondary:hover {
   background-color: #EF504F; }
 
 button:hover {
@@ -974,18 +1028,20 @@ a, a:hover, a:focus, a:visited {
     font-size: 20px; }
   .site-header .site-nav ul li {
     font-size: 20px;
-    padding: 16px; }
+    padding: 10px; }
   .site-header .site-nav ul li:last-child {
-    max-height: 25px;
-    padding: 16px 36px; }
+    padding: 10px 36px; }
   .footer-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
     .footer-block .footer-menu {
-      width: 30%; }
+      width: 40%; }
       .footer-block .footer-menu .footer-nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -1004,6 +1060,18 @@ a, a:hover, a:focus, a:visited {
   .large-ring {
     width: 270px;
     height: 270px; }
+  .training-plan-block-container {
+    height: 500px; }
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
-    width: 50vw; } }
+    width: 50vw; }
+  .home-banner {
+    background-image: url("build/images/Don-Racing.png"); }
+  .drt-team-banner {
+    background-image: url("build/images/podium.png"); }
+  .team-ride-pic {
+    background-image: url("build/images/team-ride.png"); }
+  .fit-pic {
+    background-image: url("build/images/fit-pic.png"); }
+  .a-space-banner-container {
+    height: 70vh; } }

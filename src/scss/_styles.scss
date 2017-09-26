@@ -1,6 +1,5 @@
 
 
-
   //text
   h1, h2, h3 {
     font-family: $show-font;
@@ -120,11 +119,13 @@
     background-image: url('build/images/Don-Racing.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   .drt-team-banner {
     background-image: url('build/images/podium.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   .banner-copy-container {
     h3 {
@@ -135,6 +136,7 @@
     background-image: url('build/images/team-ride.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   .training-camp-pic {
@@ -156,6 +158,7 @@
     background-image: url('build/images/fit-pic.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   .ad-block, .category-block {
@@ -191,6 +194,9 @@
       color: inherit;
       text-decoration: underline;
     }
+  }
+  .article-list {
+    color: $text-colored;
   }
 
   //Form Elements

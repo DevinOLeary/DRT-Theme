@@ -4,8 +4,8 @@
   <h1 class="animated fadeInDown">Contact Us!</h1>
   <hr class="colored-divider"/>
 </section>
-<section class="content-block center">
-  <div class="animated fadeInLeft delay center">
+<section class="content-block center text-colored">
+  <div class="animated fadeIn delay center">
     <?php if(have_posts()): while(have_posts()): the_post();?>
       <article class="content-text">
         <?php the_content(); ?>

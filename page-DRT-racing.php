@@ -16,19 +16,21 @@
 </section>
 <!-- Team Blurb -->
 <section class="content-block center">
-  <?php
-    global $more;
-    $more = 0;
-    query_posts(array('category_name' => 'team-blurb'));
-    if(have_posts()) : while(have_posts()) : the_post();?>
-      <h3><?php the_title(); ?></h3>
-      <hr class="colored-divider"/>
-      <article class="content-text">
-        <?php the_content(); ?>
-      </article>
-  <?php endwhile; endif;
-    wp_reset_query();
-  ?>
+  <div class="below-fold-blurb center text-colored">
+    <?php
+      global $more;
+      $more = 0;
+      query_posts(array('category_name' => 'team-blurb'));
+      if(have_posts()) : while(have_posts()) : the_post();?>
+        <h3><?php the_title(); ?></h3>
+        <hr class="colored-divider"/>
+        <article class="content-text">
+          <?php the_content(); ?>
+        </article>
+    <?php endwhile; endif;
+      wp_reset_query();
+    ?>
+  </div>
   <br/>
   <hr class="section-divider"/>
 </section>
@@ -44,14 +46,14 @@
 </section>
 
 <!-- Rider Shots -->
-<section class="content-block center">
+<section class="content-block center text-colored" id="riders">
   <h2>Riders</h2>
   <hr class="colored-divider"/>
   <?php get_template_part('template-parts/content', 'riders'); ?>
 </section>
 <!-- CTA -->
 <section class="small-block">
-  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4>Join The Fam</h4></button></a>
+  <a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><button class="button-cta"><h4><?php the_field('join_team_button'); ?></h4></button></a>
   <br/>
 </section>
 <?php get_footer(); ?>

@@ -7,23 +7,23 @@
   <p class="delay animated fadeInDown"><?php echo get_post_field('post_content', $post->ID); ?></p>
   <ul class="delay animated fadeInLeft">
     <li class="step-list-container">
-      <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
-      <p>Read through the packages and find one what sounds right for you.</p>
+      <figure><a href="#trainingPackages"><div class="hexagon" id="hex"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
+      <p><?php the_field('first_step'); ?></p>
     </li>
     <li class="step-list-container">
       <figure><a href="<?php echo esc_url(get_permalink(get_page_by_title('Contact')));?>"><div class="hexagon"><h4 class="show-font">Step <br/>2</h4></div></a></figure>
-      <p>Contact Don and start planning your pesonalized training plan</p>
+      <p><?php the_field('second_step'); ?></p>
     </li>
     <li class="step-list-container">
       <figure><div class="hexagon popmake-training-modal"><h4 class="show-font">Step <br/>3</h4></div></figure>
-      <p>Realize the your true athletic potential!</p>
+      <p><?php the_field('third_step'); ?></p>
     </li>
   </ul>
 </header>
 <!-- Training Packages Container -->
-<section class="content-block center">
-  <div class="training-rings hide">
-    <h2 id="trainingPackages">Training Packages</h2>
+<section class="content-block center" id="trainingPackages">
+  <div class="training-rings">
+    <h2>Training Packages</h2>
     <hr class="colored-divider"/>
     <ul class="row-content">
       <a href="#planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>
@@ -43,20 +43,20 @@
   </article>
 </section>
 <!-- Secondary Services -->
-<section class="content-block center">
+<section class="content-block center text-colored">
   <br/>
   <h2>Some Other Ideas</h2>
   <hr class="colored-divider"/>
   <br/>
   <div class="row-content">
     <!-- Training Camps -->
-    <a href="#otherPlanContainer"><figure id="trainingCamp" class="training-camp-pic content-block">
+    <a href="#otherPlanContainer"><figure id="trainingCamp" class="training-camp-pic content-block other-plan">
       <div class="overlay-full center">
         <h2>Training Camps</h2>
       </div>
     </figure></a>
     <!-- Performance Evaluation -->
-    <a href="#otherPlanContainer"><figure id="performanceEval" class="performance-eval-pic content-block">
+    <a href="#otherPlanContainer"><figure id="performanceEval" class="performance-eval-pic content-block other-plan">
       <div class="overlay-full center">
         <h2>Performance Evaluation</h2>
       </div>
@@ -69,7 +69,7 @@
 </section>
 <hr class="section-divider"/>
 <!-- Plan Contact -->
-<section class="content-block center">
+<section class="content-block center text-colored">
   <?php
     global $more;
     $more = 0;
