@@ -13,7 +13,7 @@
 </section>
 <section class="content-block center">
   <div class="diagonal-overlay"></div>
-    <div  class="hide below-fold-blurb">
+    <div  class="below-fold-blurb">
       <?php
         global $more;
         $more = 0;
@@ -50,7 +50,7 @@
   </div>
 </section>
 <section class="content-block">
-  <div class="deep-page-section center hide">
+  <div class="deep-page-section center">
     <?php
       get_template_part('template-parts/content', 'featured');
     ?>

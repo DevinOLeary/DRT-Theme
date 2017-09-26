@@ -10,13 +10,13 @@
 </section>
 <!-- Goal Block -->
 <section class="content-block center">
-  <div class="center hide below-fold-blurb text-colored">
+  <div class="center below-fold-blurb text-colored">
     <?php
     global $more;
     $more = 0;
     query_posts(array('category_name' => 'bike-fit-blurb'));
     if(have_posts()): while(have_posts()): the_post();?>
-      <h3><?php the_title(); ?></h3>
+      <h2><?php the_title(); ?></h2>
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>

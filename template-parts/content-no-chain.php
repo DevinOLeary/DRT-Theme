@@ -1,5 +1,5 @@
 <div class="diagonal-overlay"></div>
-<div class="deep-page-section hide">
+<div class="deep-page-section">
   <?php
   global $more;
   $more = 0;

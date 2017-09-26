@@ -32,7 +32,7 @@
     </ul>
   </div>
   <!-- Package content box -->
-  <div id="planContent" class="training-plan-block-container hide">
+  <div id="planContent" class="training-plan-block-container">
     <?php get_template_part('template-parts/content', 'training-plan'); ?>
   </div>
 </section>
