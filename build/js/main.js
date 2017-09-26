@@ -17,6 +17,24 @@ var $ = jQuery.noConflict();
 //   });
 // });
 
+//rider hover info
+$(function() {
+
+  $(window).resize(function() {
+    if($(window).width() <= 600) {
+      $(".overlay-full").removeClass('hide');
+    } else {
+      $(".overlay-full").addClass('hide');
+    }
+  });
+  if($(window).width() <= 600) {
+    $(".overlay-full").removeClass('hide');
+  }
+
+  $(".rider-pic").hover(function(){
+    $(this).find(".overlay-full").stop(true,true).fadeToggle();
+  });
+});
 
 // Scroll Fade Ins
 $(function() {
