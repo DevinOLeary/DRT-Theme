@@ -22,7 +22,7 @@
 </header>
 <!-- Training Packages Container -->
 <section class="content-block center" id="trainingPackages">
-  <div class="training-rings hide">
+  <div class="training-rings">
     <h2>Training Packages</h2>
     <hr class="colored-divider"/>
     <ul class="row-content">

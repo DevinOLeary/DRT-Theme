@@ -20,24 +20,8 @@ var $ = jQuery.noConflict();
 
 //Scroll Fade Ins
 $(function() {
-  var belowFold = ".below-fold-blurb",
-  deepPage = ".deep-page-section",
-  trainingRings = ".training-rings";
-
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 300) {
-      $(belowFold).removeClass('hide');
-      $(belowFold).addClass('animated fadeIn');
-    }
-    if (scroll >= 600) {
-      $(trainingRings).removeClass('hide');
-      $(trainingRings).addClass('animated fadeIn');
-    }
-    if (scroll >=1300) {
-      $(deepPage).removeClass('hide');
-      $(deepPage).addClass('animated fadeIn');
-    }
+  $(window).scroll(function(){
+    console.log("success");
   });
 });
 
