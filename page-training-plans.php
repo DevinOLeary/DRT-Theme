@@ -21,9 +21,9 @@
   </ul>
 </header>
 <!-- Training Packages Container -->
-<section class="content-block center">
+<section class="content-block center" id="trainingPackages">
   <div class="training-rings hide">
-    <h2 id="trainingPackages">Training Packages</h2>
+    <h2>Training Packages</h2>
     <hr class="colored-divider"/>
     <ul class="row-content">
       <a href="#planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>
