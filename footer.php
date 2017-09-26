@@ -24,7 +24,7 @@
           <a href="" target="_blank" class="author-link">Designed and Built by Devin O'Leary</a>
         </li>
         <li>
-          <a href="http://localhost:8888/wordpress/wp-admin/" target="_blank" class="admin-link">Wordpress Admin</a>
+          <a href="http://drtconsulting.net/wp-admin/" target="_blank" class="admin-link">Wordpress Admin</a>
         </li>
       </ul>
 

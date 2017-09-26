@@ -7,7 +7,7 @@
   <p class="delay animated fadeInDown"><?php echo get_post_field('post_content', $post->ID); ?></p>
   <ul class="delay animated fadeInLeft">
     <li class="step-list-container">
-      <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
+      <figure><a href="#trainingPackages"><div class="hexagon" id="hex"><h4 class="show-font">Step <br/>1</h4></div></a></figure>
       <p><?php the_field('first_step'); ?></p>
     </li>
     <li class="step-list-container">
