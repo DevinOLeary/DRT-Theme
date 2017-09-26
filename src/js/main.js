@@ -161,3 +161,10 @@ $(function() {
     }
   });
 });
+
+//rider hover info
+$(function() {
+  $(".rider-pic").hover(function(){
+    $(this).find(".overlay-full").stop(true,true).fadeToggle();
+  });
+});
