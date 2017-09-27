@@ -1,5 +1,5 @@
 <!-- Team News Loop -->
-<div id="firstArticles" class="article-list">
+<div id="firstArticles" class="article-list center">
   <h2><?php echo get_cat_name(10); ?></h2>
   <hr class="colored-divider"/>
   <div class="row-content">
