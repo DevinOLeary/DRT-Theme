@@ -1,7 +1,7 @@
 <!-- Team News Loop -->
 <div id="firstArticles" class="article-list">
   <h2><?php echo get_cat_name(10); ?></h2>
-  <hr class="section-divider"/>
+  <hr class="colored-divider"/>
   <div class="row-content">
     <?php
       global $more;
@@ -26,7 +26,7 @@
 </div>
 <!-- Blog Loop -->
 <div id="secondArticles" class="article-list center">
-  <h3><?php echo get_cat_name(11); ?></h3>
+  <h2><?php echo get_cat_name(11); ?></h2>
   <hr class="colored-divider"/>
   <div class="row-content">
     <?php
