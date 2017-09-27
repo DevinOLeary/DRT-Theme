@@ -11,17 +11,17 @@
 <!-- Articles -->
 <section class="row-content animated fadeInLeft delay">
   <div class="category-block center">
-    <h3><?php echo get_cat_name(16); ?></h3>
+    <h3><?php echo get_cat_name(10); ?></h3>
     <hr class="colored-divider"/>
-    <?php echo category_description(16); ?>
+    <?php echo category_description(10); ?>
     <a href="#articleContainer">
       <button class="sub-button" id="firstCategory"><h4>View Articles</h4></button>
     </a>
   </div>
   <div class="category-block center">
-    <h3><?php echo get_cat_name(17); ?></h3>
+    <h3><?php echo get_cat_name(11); ?></h3>
     <hr class="colored-divider"/>
-    <?php echo category_description(17); ?>
+    <?php echo category_description(11); ?>
     <a href="#articleContainer">
       <button class="sub-button" id="secondCategory"><h4>View Articles</h4></button>
     </a>
