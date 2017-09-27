@@ -1,6 +1,6 @@
 <!-- Team News Loop -->
 <div id="firstArticles" class="article-list">
-  <h2><?php echo get_cat_name(16); ?></h2>
+  <h2><?php echo get_cat_name(10); ?></h2>
   <hr class="section-divider"/>
   <div class="row-content">
     <?php
@@ -26,7 +26,7 @@
 </div>
 <!-- Blog Loop -->
 <div id="secondArticles" class="article-list center">
-  <h3><?php echo get_cat_name(17); ?></h3>
+  <h3><?php echo get_cat_name(11); ?></h3>
   <hr class="colored-divider"/>
   <div class="row-content">
     <?php
