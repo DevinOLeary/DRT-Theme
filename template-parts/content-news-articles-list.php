@@ -35,7 +35,7 @@
       query_posts(array('category_name' => 'training-wisdom'));
       if(have_posts()) : while(have_posts()) : the_post();?>
       <div class="article">
-        <h4><?php the_title(); ?></h4>
+        <a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
         <h5><?php echo get_the_date(); ?></h5>
         <hr class="colored-divider"/>
         <article class="content-text">
