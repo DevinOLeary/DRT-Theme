@@ -9,7 +9,7 @@
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>
-      </article>  
+      </article>
     <?php endwhile; endif; wp_reset_query();?>
   </article>
   <article class="training-plan-block center" id="medium-plan">
@@ -22,19 +22,19 @@
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>
-      </article>  
+      </article>
     <?php endwhile; endif; wp_reset_query();?>
   </article>
   <article class="training-plan-block center" id="large-plan">
     <?php
     global $more;
     $more = 0;
-    query_posts(array('category_name' => 'large-ring'));
+    query_posts(array('category_name' => 'big-ring'));
     if(have_posts()): while(have_posts()): the_post();?>
       <h3><?php the_title(); ?></h3>
       <hr class="colored-divider"/>
       <article class="content-text">
         <?php the_content(); ?>
-      </article>  
+      </article>
     <?php endwhile; endif; wp_reset_query();?>
   </article>

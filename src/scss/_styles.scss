@@ -4,9 +4,11 @@
   //text
   h1, h2, h3 {
     font-family: $show-font;
+    font-weight: 400;
   }
   h4, h5, p, li {
     font-family: $read-font;
+    font-weight: 300;
   }
   h1{
     font-size: $mobile-title;

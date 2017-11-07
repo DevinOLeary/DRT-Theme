@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400|Lato:300,700");
 
 body {
   width: 100%;
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5 {
   height: 100px; }
   .site-header .custom-logo-link img {
     display: inline-block;
-    margin: 0px;
+    margin-top: 10px;
     position: absolute;
     top: 0px;
     left: 10px;
@@ -296,8 +296,8 @@ h1, h2, h3, h4, h5 {
 
 .content-text {
   margin: 2em 0;
-  width: 80%;
-  max-width: 650px;
+  width: 90%;
+  max-width: 700px;
   min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,8 +313,15 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center; }
 
-.wrap-text {
-  padding: 0 10%; }
+.content-article {
+  max-width: 800px;
+  min-width: 300px;
+  width: 90%; }
+  .content-article img {
+    float: right;
+    margin: 1em;
+    width: 300px;
+    height: auto; }
 
 .bullet-list {
   list-style-type: disc; }
@@ -324,7 +331,8 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   margin-top: 50px; }
   .ad-block p {
-    margin: .5em 1.5em; }
+    margin: .5em 1.5em;
+    max-width: 800px; }
 
 .small-block {
   display: -webkit-box;
@@ -345,6 +353,7 @@ h1, h2, h3, h4, h5 {
 
 .training-plan-block-container {
   height: 550px;
+  overflow-y: scroll;
   width: 100%; }
 
 .category-block {
@@ -511,7 +520,10 @@ h1, h2, h3, h4, h5 {
   min-width: 300px; }
   .article-image img {
     width: 100%;
-    height: auto; }
+    max-width: 400px;
+    height: auto;
+    float: right;
+    margin: 3%; }
 
 .overlay-left, .overlay-right {
   position: absolute;
@@ -571,7 +583,7 @@ h1, h2, h3, h4, h5 {
           align-items: center; }
   .footer-block .footer-menu {
     margin-top: 2em;
-    width: 50%; }
+    width: 70%; }
     .footer-block .footer-menu .footer-nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -589,6 +601,8 @@ h1, h2, h3, h4, h5 {
           -ms-flex-align: stretch;
               align-items: stretch;
       height: 180px; }
+      .footer-block .footer-menu .footer-nav ul li {
+        margin: 0 15px; }
   .footer-block .contribution-links {
     margin: .5em; }
     .footer-block .contribution-links ul {
@@ -617,10 +631,12 @@ h1, h2, h3, h4, h5 {
         display: block; }
 
 h1, h2, h3 {
-  font-family: "Rajdhani", sans-serif; }
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400; }
 
 h4, h5, p, li {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
 
 h1 {
   font-size: 48px; }
@@ -812,9 +828,9 @@ label {
     font-family: "Lato", sans-serif; }
 
 .instagram-icon {
-  height: 30px;
-  width: 30px;
-  margin-left: 15px; }
+  height: 40px;
+  width: 40px;
+  margin: 20px; }
 
 .hexagon {
   position: relative;
@@ -984,6 +1000,8 @@ a, a:hover, a:focus, a:visited {
   cursor: pointer; }
 
 @media only screen and (min-width: 1000px) {
+  h1, h2, h3 {
+    font-weight: 300; }
   h1 {
     font-size: 64px; }
   h2 {
@@ -1033,4 +1051,6 @@ a, a:hover, a:focus, a:visited {
     height: 270px; }
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
-    width: 50vw; } }
+    width: 50vw; }
+  .content-article img {
+    width: 400px; } }

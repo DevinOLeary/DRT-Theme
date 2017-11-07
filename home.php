@@ -9,7 +9,7 @@
 <section>
 </section>
 <!-- Articles -->
-<section class="row-content animated fadeInLeft delay">
+<section class="row-content animated fadeIn delay">
   <div class="category-block center">
     <h3><?php echo get_cat_name(10); ?></h3>
     <hr class="colored-divider"/>

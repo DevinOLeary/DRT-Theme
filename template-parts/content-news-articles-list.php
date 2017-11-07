@@ -10,11 +10,11 @@
       if(have_posts()) : while(have_posts()) : the_post();?>
 
         <div class="article">
-          <a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+          <a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3>
           <h5><?php echo get_the_date(); ?></h5>
           <hr class="colored-divider"/>
           <article class="content-text">
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail(); ?></a>
             <?php the_content(); ?>
           </article>
         </div>

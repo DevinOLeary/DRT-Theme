@@ -18,7 +18,6 @@
           }
       ?>
       <?php wp_nav_menu(array('theme_location' => 'main', 'container_class' => 'site-nav', 'container_id' => 'desktopMenu')); ?>
-
     <!-- Mobile -->
       <div class='menu-icon animated fadeIn' id='hamburger'>
         <h4>Menu</h4>

@@ -16,7 +16,7 @@
 </section>
 <!-- Team Blurb -->
 <section class="content-block center">
-  <div class="below-fold-blurb center text-colored">
+  <div class="below-fold-blurb center text-colored hide">
     <?php
       global $more;
       $more = 0;
