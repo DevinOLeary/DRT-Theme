@@ -2,7 +2,7 @@
 
 
   //text
-  h1, h2, h3 {
+  h1, h2, h3, label {
     font-family: $show-font;
     font-weight: 400;
   }
@@ -119,13 +119,13 @@
   }
   //Banners
   .home-banner {
-    background-image: url('build/images/Don-Racing.png');
+    background-image: url('build/images/Don-Racing.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .drt-team-banner {
-    background-image: url('build/images/podium.png');
+    background-image: url('build/images/podium.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -136,7 +136,7 @@
     }
   }
   .team-ride-pic {
-    background-image: url('build/images/team-ride.png');
+    background-image: url('build/images/team-ride.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,7 +150,7 @@
 
   }
   .performance-eval-pic {
-    background-image: url('build/images/performance-testing.png');
+    background-image: url('build/images/performance-testing.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -161,7 +161,7 @@
   }
 
   .fit-pic {
-    background-image: url('build/images/fit-pic.png');
+    background-image: url('build/images/fit-pic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -185,12 +185,6 @@
   }
   .fit-header:hover{
     cursor:pointer;
-  }
-
-  .training-plan-block {
-    p {
-      margin: 0;
-    }
   }
 
   .ride-info-container {

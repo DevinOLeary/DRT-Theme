@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  margin: 0;
+  margin-right: 0;
   position: relative; }
 
 aside, p {
@@ -179,13 +179,16 @@ h1, h2, h3, h4, h5 {
   position: relative;
   height: 50vh;
   min-height: 450px;
-  width: 100vw; }
+  width: 100vw;
+  max-width: 100%; }
 
 .a-space-banner {
   height: 130%;
   width: 100vw;
+  max-width: 100%;
   position: absolute;
   top: -30%;
+  left: 0;
   right: 0;
   z-index: 50; }
 
@@ -237,6 +240,7 @@ h1, h2, h3, h4, h5 {
     padding: 2em 10%; }
   .above-fold-container .diagonal-overlay {
     width: 50%;
+    max-width: 800px;
     height: 0;
     overflow: hidden; }
   .above-fold-container .diagonal-overlay:after {
@@ -355,6 +359,9 @@ h1, h2, h3, h4, h5 {
   height: 550px;
   overflow-y: scroll;
   width: 100%; }
+
+.training-plan-block p {
+  margin: 0; }
 
 .category-block {
   position: relative;
@@ -630,7 +637,7 @@ h1, h2, h3, h4, h5 {
         margin-top: .5em;
         display: block; }
 
-h1, h2, h3 {
+h1, h2, h3, label {
   font-family: "Rajdhani", sans-serif;
   font-weight: 400; }
 
@@ -722,13 +729,13 @@ a:focus, button:focus {
   color: white; }
 
 .home-banner {
-  background-image: url("build/images/Don-Racing.png");
+  background-image: url("build/images/Don-Racing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 .drt-team-banner {
-  background-image: url("build/images/podium.png");
+  background-image: url("build/images/podium.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -737,7 +744,7 @@ a:focus, button:focus {
   color: white; }
 
 .team-ride-pic {
-  background-image: url("build/images/team-ride.png");
+  background-image: url("build/images/team-ride.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -749,7 +756,7 @@ a:focus, button:focus {
   background-position: center; }
 
 .performance-eval-pic {
-  background-image: url("build/images/performance-testing.png");
+  background-image: url("build/images/performance-testing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -758,7 +765,7 @@ a:focus, button:focus {
   cursor: pointer; }
 
 .fit-pic {
-  background-image: url("build/images/fit-pic.png");
+  background-image: url("build/images/fit-pic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -778,9 +785,6 @@ a:focus, button:focus {
 
 .fit-header:hover {
   cursor: pointer; }
-
-.training-plan-block p {
-  margin: 0; }
 
 .ride-info-container {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1000,7 +1004,7 @@ a, a:hover, a:focus, a:visited {
   cursor: pointer; }
 
 @media only screen and (min-width: 1000px) {
-  h1, h2, h3 {
+  h1, h2, h3, label {
     font-weight: 300; }
   h1 {
     font-size: 64px; }

@@ -14,7 +14,9 @@
           <h5><?php echo get_the_date(); ?></h5>
           <hr class="colored-divider"/>
           <article class="content-text">
-            <?php the_post_thumbnail(); ?></a>
+            <figure class="article-image">
+              <?php the_post_thumbnail(); ?></a>
+            </figure>
             <?php the_content(); ?>
           </article>
         </div>
