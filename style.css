@@ -196,18 +196,6 @@ h1, h2, h3, h4, h5 {
   height: 100%;
   width: 100vw; }
 
-.step-list-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2em 20%; }
-
 .above-fold-container {
   display: -webkit-box;
   display: -ms-flexbox;
