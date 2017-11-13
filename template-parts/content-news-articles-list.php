@@ -1,5 +1,5 @@
 <!-- Team News Loop -->
-<div id="firstArticles" class="article-list">
+<div id="firstArticles" class="article-list center">
   <h2><?php echo get_cat_name(10); ?></h2>
   <hr class="colored-divider"/>
   <div class="row-content">
@@ -10,11 +10,13 @@
       if(have_posts()) : while(have_posts()) : the_post();?>
 
         <div class="article">
-          <a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+          <a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3>
           <h5><?php echo get_the_date(); ?></h5>
           <hr class="colored-divider"/>
           <article class="content-text">
-            <?php the_post_thumbnail(); ?>
+            <figure class="article-image">
+              <?php the_post_thumbnail(); ?></a>
+            </figure>
             <?php the_content(); ?>
           </article>
         </div>
@@ -35,7 +37,7 @@
       query_posts(array('category_name' => 'training-wisdom'));
       if(have_posts()) : while(have_posts()) : the_post();?>
       <div class="article">
-        <h4><?php the_title(); ?></h4>
+        <a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
         <h5><?php echo get_the_date(); ?></h5>
         <hr class="colored-divider"/>
         <article class="content-text">

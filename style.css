@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:300|Lato:300");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400|Lato:300,700");
 
 body {
   width: 100%;
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5 {
   height: 100px; }
   .site-header .custom-logo-link img {
     display: inline-block;
-    margin: 0px;
+    margin-top: 10px;
     position: absolute;
     top: 0px;
     left: 10px;
@@ -179,13 +179,16 @@ h1, h2, h3, h4, h5 {
   position: relative;
   height: 50vh;
   min-height: 450px;
-  width: 100vw; }
+  width: 100vw;
+  max-width: 100%; }
 
 .a-space-banner {
   height: 130%;
   width: 100vw;
+  max-width: 100%;
   position: absolute;
   top: -30%;
+  left: 0;
   right: 0;
   z-index: 50; }
 
@@ -237,6 +240,7 @@ h1, h2, h3, h4, h5 {
     padding: 2em 10%; }
   .above-fold-container .diagonal-overlay {
     width: 50%;
+    max-width: 800px;
     height: 0;
     overflow: hidden; }
   .above-fold-container .diagonal-overlay:after {
@@ -296,8 +300,8 @@ h1, h2, h3, h4, h5 {
 
 .content-text {
   margin: 2em 0;
-  width: 80%;
-  max-width: 650px;
+  width: 90%;
+  max-width: 700px;
   min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,8 +317,15 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center; }
 
-.wrap-text {
-  padding: 0 10%; }
+.content-article {
+  max-width: 800px;
+  min-width: 300px;
+  width: 90%; }
+  .content-article img {
+    float: right;
+    margin: 1em;
+    width: 300px;
+    height: auto; }
 
 .bullet-list {
   list-style-type: disc; }
@@ -324,7 +335,8 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   margin-top: 50px; }
   .ad-block p {
-    margin: .5em 1.5em; }
+    margin: .5em 1.5em;
+    max-width: 800px; }
 
 .small-block {
   display: -webkit-box;
@@ -345,7 +357,11 @@ h1, h2, h3, h4, h5 {
 
 .training-plan-block-container {
   height: 550px;
+  overflow-y: scroll;
   width: 100%; }
+
+.training-plan-block p {
+  margin: 0; }
 
 .category-block {
   position: relative;
@@ -445,7 +461,8 @@ h1, h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%; }
+  width: 100%;
+  padding: 0; }
   .banner-copy-container h3 {
     width: 80%;
     padding: 30px 7%;
@@ -511,12 +528,17 @@ h1, h2, h3, h4, h5 {
   min-width: 300px; }
   .article-image img {
     width: 100%;
-    height: auto; }
+    max-width: 400px;
+    height: auto;
+    float: right;
+    margin: 3%; }
 
 .overlay-left, .overlay-right {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   z-index: 2; }
@@ -571,7 +593,7 @@ h1, h2, h3, h4, h5 {
           align-items: center; }
   .footer-block .footer-menu {
     margin-top: 2em;
-    width: 50%; }
+    width: 70%; }
     .footer-block .footer-menu .footer-nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -589,6 +611,8 @@ h1, h2, h3, h4, h5 {
           -ms-flex-align: stretch;
               align-items: stretch;
       height: 180px; }
+      .footer-block .footer-menu .footer-nav ul li {
+        margin: 0 15px; }
   .footer-block .contribution-links {
     margin: .5em; }
     .footer-block .contribution-links ul {
@@ -616,11 +640,13 @@ h1, h2, h3, h4, h5 {
         margin-top: .5em;
         display: block; }
 
-h1, h2, h3 {
-  font-family: "Rajdhani", sans-serif; }
+h1, h2, h3, label {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400; }
 
 h4, h5, p, li {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
 
 h1 {
   font-size: 48px; }
@@ -706,13 +732,13 @@ a:focus, button:focus {
   color: white; }
 
 .home-banner {
-  background-image: url("build/images/Don-Racing.png");
+  background-image: url("build/images/Don-Racing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 .drt-team-banner {
-  background-image: url("build/images/podium.png");
+  background-image: url("build/images/podium.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -721,7 +747,7 @@ a:focus, button:focus {
   color: white; }
 
 .team-ride-pic {
-  background-image: url("build/images/team-ride.png");
+  background-image: url("build/images/team-ride.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -733,7 +759,7 @@ a:focus, button:focus {
   background-position: center; }
 
 .performance-eval-pic {
-  background-image: url("build/images/performance-testing.png");
+  background-image: url("build/images/performance-testing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -742,7 +768,7 @@ a:focus, button:focus {
   cursor: pointer; }
 
 .fit-pic {
-  background-image: url("build/images/fit-pic.png");
+  background-image: url("build/images/fit-pic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -762,9 +788,6 @@ a:focus, button:focus {
 
 .fit-header:hover {
   cursor: pointer; }
-
-.training-plan-block p {
-  margin: 0; }
 
 .ride-info-container {
   background-color: rgba(0, 0, 0, 0.8);
@@ -786,12 +809,13 @@ label {
 
 .overlay-right {
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(transparent));
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
-  background-size: cover; }
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent); }
 
 .overlay-left {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(transparent));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent); }
+
+.overlay-left, .overlay-right {
   background-size: cover;
   color: white; }
 
@@ -812,9 +836,9 @@ label {
     font-family: "Lato", sans-serif; }
 
 .instagram-icon {
-  height: 30px;
-  width: 30px;
-  margin-left: 15px; }
+  height: 40px;
+  width: 40px;
+  margin: 20px; }
 
 .hexagon {
   position: relative;
@@ -984,6 +1008,8 @@ a, a:hover, a:focus, a:visited {
   cursor: pointer; }
 
 @media only screen and (min-width: 1000px) {
+  h1, h2, h3, label {
+    font-weight: 300; }
   h1 {
     font-size: 64px; }
   h2 {
@@ -1002,7 +1028,7 @@ a, a:hover, a:focus, a:visited {
     padding: 16px 36px; }
   .banner-copy-container {
     width: 30%;
-    margin-left: 5%; }
+    padding-right: 7%; }
     .banner-copy-container h3 {
       width: 100%; }
   .footer-block {
@@ -1033,4 +1059,6 @@ a, a:hover, a:focus, a:visited {
     height: 270px; }
   .training-camp-pic, .performance-eval-pic {
     height: 50vh;
-    width: 50vw; } }
+    width: 50vw; }
+  .content-article img {
+    width: 400px; } }

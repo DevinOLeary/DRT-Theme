@@ -28,7 +28,7 @@
     <ul class="row-content">
       <a href="#planContent" class="anchor-link"><li class="small-ring"><h3>Small Ring</h3></li></a>
       <a href="#planContent" class="anchor-link"><li class="middle-ring"><h3>Middle Ring</h3></li></a>
-      <a href="#planContent" class="anchor-link"><li class="large-ring"><h3>Large Ring</h3></li></a>
+      <a href="#planContent" class="anchor-link"><li class="large-ring"><h3>Big Ring</h3></li></a>
     </ul>
   </div>
   <!-- Package content box -->

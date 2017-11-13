@@ -83,7 +83,7 @@ gulp.task('images', function() {
 
 
 // run all tasks
-gulp.task('run', ['css', 'js']);
+gulp.task('run', ['css', 'js', 'images']);
 
 // watch for changes
 gulp.task('watch', function() {

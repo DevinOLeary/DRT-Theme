@@ -2,6 +2,9 @@
 @media only screen and (min-width: 1000px){
 
 //text
+h1,h2,h3,label {
+  font-weight: 300;
+}
   h1{
     font-size: $desktop-title;
   }
@@ -35,7 +38,7 @@
   }
   .banner-copy-container {
     width: 30%;
-    margin-left: 5%;
+    padding-right: 7%;
     h3 {
       width: 100%;
     }
@@ -77,7 +80,11 @@
     width: 50vw;
   }
 
-
+  .content-article {
+    img {
+      width: 400px;
+    }
+  }
 
 
 
