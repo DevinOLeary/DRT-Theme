@@ -190,12 +190,6 @@ h1, h2, h3, h4, h5 {
   height:100%;
   width: 100vw;
 }
-.step-list-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2em 20%;
-}
 .above-fold-container {
   display: flex;
   flex-direction: column;
@@ -203,7 +197,7 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   padding: 2em 0;
   position: relative;
-  p {
+  .above-fold-blurb {
     width:80%;
     max-width: 800px;
   }
@@ -211,7 +205,10 @@ h1, h2, h3, h4, h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2em 10%;
+    margin: 2em 10%;
+    p {
+      width: 300px;
+    }
   }
   .diagonal-overlay {
       width: 50%;

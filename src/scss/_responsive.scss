@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 900px){
 
 //text
 h1,h2,h3,label {
@@ -38,7 +38,7 @@ h1,h2,h3,label {
   }
   .banner-copy-container {
     width: 30%;
-    padding-right: 7%;
+    padding: 7%;
     h3 {
       width: 100%;
     }
@@ -56,6 +56,13 @@ h1,h2,h3,label {
   }
 
   //Content blocks
+  .above-fold-container {
+    .step-list-container {
+      p {width: 600px;}
+    }
+  }
+
+
   .content-block{
     .two-column-content {
       flex-direction: row;
@@ -85,13 +92,6 @@ h1,h2,h3,label {
       width: 400px;
     }
   }
-
-
-
-
-
-
-
 
 
 }
