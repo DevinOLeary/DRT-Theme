@@ -4,7 +4,7 @@
   <div class="diagonal-overlay"></div>
   <h1 class="animated fadeInDown"><?php the_title(); ?></h1>
   <hr class="colored-divider"/>
-  <p class="delay animated fadeInDown"><?php echo get_post_field('post_content', $post->ID); ?></p>
+  <p class="delay animated fadeInDown above-fold-blurb"><?php echo get_post_field('post_content', $post->ID); ?></p>
   <ul class="delay animated fadeInLeft">
     <li class="step-list-container">
       <figure><a href="#trainingPackages"><div class="hexagon"><h4 class="show-font">Step <br/>1</h4></div></a></figure>

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400|Lato:300,700");
-
 body {
   width: 100%;
   height: 100%;
@@ -212,7 +211,7 @@ h1, h2, h3, h4, h5 {
           align-items: center;
   padding: 2em 0;
   position: relative; }
-  .above-fold-container p {
+  .above-fold-container .above-fold-blurb {
     width: 80%;
     max-width: 800px; }
   .above-fold-container .step-list-container {
@@ -225,7 +224,9 @@ h1, h2, h3, h4, h5 {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 2em 10%; }
+    margin: 2em 10%; }
+    .above-fold-container .step-list-container p {
+      width: 300px; }
   .above-fold-container .diagonal-overlay {
     width: 50%;
     max-width: 800px;
@@ -995,7 +996,7 @@ a, a:hover, a:focus, a:visited {
   text-decoration: none;
   cursor: pointer; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
   h1, h2, h3, label {
     font-weight: 300; }
   h1 {
@@ -1031,6 +1032,8 @@ a, a:hover, a:focus, a:visited {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; }
+  .above-fold-container .step-list-container p {
+    width: 600px; }
   .content-block .two-column-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
