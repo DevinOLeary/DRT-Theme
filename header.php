@@ -25,7 +25,7 @@
       <div class="mobile-menu center" id="mobileMenu">
         <aside class="exit" id="exit"><span>X<span></aside>
         <div class="animated fadeInDown">
-          <a href="<?php echo get_permalink(27); ?>"><h1 id="title">DRT</h1></a>
+          <a href="<?php echo esc_url(get_permalink(get_page_by_title('Home')));?>"><h1 id="title">DRT</h1></a>
           <?php wp_nav_menu(array('theme_location' => 'mobile')); ?>
         </div>
       </div>
