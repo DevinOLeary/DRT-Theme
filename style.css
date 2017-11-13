@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5 {
         justify-content: space-around;
     margin: 2em 10%; }
     .above-fold-container .step-list-container p {
-      width: 300px; }
+      width: 80%; }
   .above-fold-container .diagonal-overlay {
     width: 50%;
     max-width: 800px;
