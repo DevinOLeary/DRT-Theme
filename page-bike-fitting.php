@@ -24,7 +24,7 @@
   <?php endwhile; endif; wp_reset_query();?>
   </div>
   <br/>
-  <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a>
+  <!-- <a href=""><button class="button-cta"><h4>Read "The Right Fit"</h4></button></a> -->
 </section>
 <!-- Fit Options Block -->
 <section class="center">

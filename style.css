@@ -742,7 +742,7 @@ a:focus, button:focus {
   background-position: center; }
 
 .training-camp-pic {
-  background-image: url("build/images/training-camp.jpeg");
+  background-image: url("build/images/training-camp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
