@@ -1028,7 +1028,7 @@ a, a:hover, a:focus, a:visited {
     padding: 16px 36px; }
   .banner-copy-container {
     width: 30%;
-    padding-right: 7%; }
+    padding: 7%; }
     .banner-copy-container h3 {
       width: 100%; }
   .footer-block {
