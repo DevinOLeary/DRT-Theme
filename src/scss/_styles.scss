@@ -216,11 +216,11 @@
   //overlay
   .overlay-right{
     background: $overlay-dark-right;
-    background-size: cover;
   }
-
   .overlay-left {
     background: $overlay-dark-left;
+  }
+  .overlay-left, .overlay-right {
     background-size:cover;
     color: $text-inverse;
   }
