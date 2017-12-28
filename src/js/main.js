@@ -1,22 +1,5 @@
 var $ = jQuery.noConflict();
 
-
-// //Menu appears below fold
-// $(function(){
-//   var pTop = p.offset().top;
-//   menu.hide();
-//
-//   $(window).scroll(function() { //when window is scrolled
-//     var position = (pTop - $(window).scrollTop());//position of element w.r.t top
-//     if (position < 0) {
-//       menu.slideDown(300);
-//     } else{
-//       menu.slideUp(100);
-//     }
-//     return;
-//   });
-// });
-
 //rider hover info
 $(function() {
 
